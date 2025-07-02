@@ -1,3 +1,21 @@
-[2025-06-24 18:34:25,078] INFO: [Model] Running model: Pixtral with config: {'params': {'model_name_or_path': '/mnt/data2/bingkui/model_zoo/Pixtral-12B-2409'}}
-[2025-06-25 04:24:44,912] INFO: [Save] Model: Pixtral | Saved 22831 results to results/noise_image/Pixtral/Pixtral.jsonl
-[2025-06-25 04:24:45,681] INFO: [Metrics] Model: Pixtral |  Metrics: {'Relation_accuracy': 12.207757704569607, 'Attribute_accuracy': 9.996033320111067, 'Category_accuracy': 32.07364341085272, 'Location_accuracy': 1.6166281755196306, 'Weather_accuracy': 3.614457831325301, 'Overall_accuracy': 17.52879856335684, 'E_accuracy': 0.0}
+{
+    "Accuracy": {
+        "Relation_accuracy": 28.812433581296492,
+        "Attribute_accuracy": 27.88575961919873,
+        "Category_accuracy": 22.4390919158361,
+        "Location_accuracy": 73.21016166281755,
+        "Weather_accuracy": 10.843373493975903,
+        "Overall_accuracy": 27.265559984231963,
+        "E_accuracy": 79.13409500901984
+    },
+    "Proportions": {
+        "A_proportion": 5.7027725460996015,
+        "B_proportion": 7.8971573737462215,
+        "C_proportion": 9.911961806315974,
+        "D_proportion": 7.205115851254873,
+        "E_proportion": 69.28299242258333,
+        "NA_proportion": 0.0
+    },
+    "model_name_or_path": "Pixtral",
+    "use_noise_image": true
+}
