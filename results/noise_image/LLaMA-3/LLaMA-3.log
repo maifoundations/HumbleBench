@@ -1,0 +1,3 @@
+[2025-06-24 15:32:33,486] INFO: [Model] Running model: LLaMA-3 with config: {'params': {'model_name_or_path': '/mnt/data2/bingkui/model_zoo/Llama-3.2-11B-Vision-Instruct/'}}
+[2025-06-24 18:45:50,708] INFO: [Save] Model: LLaMA-3 | Saved 22831 results to results/noise_image/LLaMA-3/LLaMA-3.jsonl
+[2025-06-24 18:45:50,890] INFO: [Metrics] Model: LLaMA-3 |  Metrics: {'Relation_accuracy': 45.00531349628055, 'Attribute_accuracy': 38.56935078672484, 'Category_accuracy': 33.33333333333333, 'Location_accuracy': 68.36027713625866, 'Weather_accuracy': 26.506024096385545, 'Overall_accuracy': 39.55586702290745, 'E_accuracy': 2.3451593505712567}

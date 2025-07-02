@@ -1,0 +1,16 @@
+Metadata-Version: 2.4
+Name: mcha
+Version: 0.3.0
+Summary: a tool for mcha
+Author-email: Bingkui Tong <bingkuitong@gmail.com>
+License-Expression: MIT
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: tqdm
+Requires-Dist: pydantic>=2.11.7
+Requires-Dist: requests
+Requires-Dist: datasets
+
+# MCHA
+
+under construction...

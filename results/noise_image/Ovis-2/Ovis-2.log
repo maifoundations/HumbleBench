@@ -1,0 +1,21 @@
+{
+    "Accuracy": {
+        "Relation_accuracy": 30.127523910733263,
+        "Attribute_accuracy": 25.29419542509586,
+        "Category_accuracy": 16.95736434108527,
+        "Location_accuracy": 36.72055427251732,
+        "Weather_accuracy": 40.963855421686745,
+        "Overall_accuracy": 24.523673952082696,
+        "E_accuracy": 1.0523150932050511
+    },
+    "Proportions": {
+        "A_proportion": 7.0605755332661735,
+        "B_proportion": 6.75835486838071,
+        "C_proportion": 8.352678375892426,
+        "D_proportion": 33.791774341903555,
+        "E_proportion": 29.79720555385222,
+        "NA_proportion": 14.239411326704918
+    },
+    "model_name_or_path": "Ovis-2",
+    "use_noise_image": true
+}

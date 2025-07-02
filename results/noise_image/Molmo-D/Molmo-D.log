@@ -1,0 +1,3 @@
+[2025-06-24 14:11:36,419] INFO: [Model] Running model: Molmo-D with config: {'params': {'model_name_or_path': '/mnt/data2/bingkui/model_zoo/Molmo-7B-D-0924/'}}
+[2025-06-24 17:05:03,462] INFO: [Save] Model: Molmo-D | Saved 22831 results to results/noise_image/Molmo-D/Molmo-D.jsonl
+[2025-06-24 17:05:03,642] INFO: [Metrics] Model: Molmo-D |  Metrics: {'Relation_accuracy': 39.519128586609995, 'Attribute_accuracy': 34.89356075631363, 'Category_accuracy': 32.55813953488372, 'Location_accuracy': 48.49884526558891, 'Weather_accuracy': 30.120481927710845, 'Overall_accuracy': 35.920459025009855, 'E_accuracy': 0.0}

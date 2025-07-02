@@ -1,0 +1,21 @@
+{
+    "Accuracy": {
+        "Relation_accuracy": 67.9596174282678,
+        "Attribute_accuracy": 73.06624355414519,
+        "Category_accuracy": 63.59357696566998,
+        "Location_accuracy": 89.83833718244803,
+        "Weather_accuracy": 79.51807228915662,
+        "Overall_accuracy": 68.72673119880864,
+        "E_accuracy": 20.41491280817799
+    },
+    "Proportions": {
+        "A_proportion": 20.12614427751741,
+        "B_proportion": 23.507511716525777,
+        "C_proportion": 30.462967018527443,
+        "D_proportion": 21.085366387806054,
+        "E_proportion": 4.818010599623319,
+        "NA_proportion": 0.0
+    },
+    "model_name_or_path": "R1-VL",
+    "use_noise_image": false
+}

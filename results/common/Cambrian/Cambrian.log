@@ -1,0 +1,21 @@
+{
+    "Accuracy": {
+        "Relation_accuracy": 53.17481402763018,
+        "Attribute_accuracy": 61.285204284014284,
+        "Category_accuracy": 49.390919158361015,
+        "Location_accuracy": 96.53579676674366,
+        "Weather_accuracy": 74.69879518072288,
+        "Overall_accuracy": 55.56480224256494,
+        "E_accuracy": 65.3337342152736
+    },
+    "Proportions": {
+        "A_proportion": 17.988699575139066,
+        "B_proportion": 14.909552801016163,
+        "C_proportion": 18.396040471289037,
+        "D_proportion": 14.716832377031231,
+        "E_proportion": 33.98887477552451,
+        "NA_proportion": 0.0
+    },
+    "model_name_or_path": "Cambrian",
+    "use_noise_image": false
+}

@@ -1,0 +1,3 @@
+[2025-06-20 16:31:17,279] INFO: [Model] Running model: LLaVA-Next with config: {'params': {'model_name_or_path': '/mnt/data2/bingkui/model_zoo/llava-v1.6-mistral-7b-hf/'}}
+[2025-06-20 20:00:17,791] INFO: [Save] Model: LLaVA-Next | Saved 22831 results to results/common/LLaVA-Next/LLaVA-Next.jsonl
+[2025-06-20 20:00:17,984] INFO: [Metrics] Model: LLaVA-Next |  Metrics: {'Relation_accuracy': 61.60998937300744, 'Attribute_accuracy': 71.16223720745735, 'Category_accuracy': 61.03266888150609, 'Location_accuracy': 95.61200923787528, 'Weather_accuracy': 77.10843373493977, 'Overall_accuracy': 65.29280364416802, 'E_accuracy': 0.0}

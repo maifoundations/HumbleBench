@@ -1,0 +1,3 @@
+[2025-06-25 11:39:57,136] INFO: [Model] Running model: Visionary-R1 with config: {'params': {'model_name_or_path': '/mnt/data2/bingkui/model_zoo/Visionary-R1/'}}
+[2025-06-25 15:38:09,657] INFO: [Save] Model: Visionary-R1 | Saved 22831 results to results/common/Visionary-R1/Visionary-R1.jsonl
+[2025-06-25 15:38:09,848] INFO: [Metrics] Model: Visionary-R1 |  Metrics: {'Relation_accuracy': 66.69766206163655, 'Attribute_accuracy': 74.6925823086077, 'Category_accuracy': 65.7530454042082, 'Location_accuracy': 94.91916859122402, 'Weather_accuracy': 84.33734939759037, 'Overall_accuracy': 69.64653322237308, 'E_accuracy': 34.03487672880337}

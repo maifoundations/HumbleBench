@@ -1,0 +1,23 @@
+[project]
+name = "mcha"
+version = "0.3.0"
+description = "a tool for mcha"
+authors = [{ name="Bingkui Tong", email="bingkuitong@gmail.com" }]
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.7"
+
+dependencies = [
+    "tqdm",
+    "pydantic>=2.11.7",
+    "requests",
+    "datasets"
+]
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["mcha*"]

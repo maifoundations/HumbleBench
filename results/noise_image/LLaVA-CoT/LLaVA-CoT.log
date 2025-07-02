@@ -1,0 +1,3 @@
+[2025-06-24 23:46:37,362] INFO: [Model] Running model: LLaVA-CoT with config: {'params': {'model_name_or_path': '/mnt/data2/bingkui/model_zoo/Llama-3.2V-11B-cot/'}}
+[2025-06-26 10:49:59,269] INFO: [Save] Model: LLaVA-CoT | Saved 22831 results to results/noise_image/LLaVA-CoT/LLaVA-CoT.jsonl
+[2025-06-26 10:49:59,465] INFO: [Metrics] Model: LLaVA-CoT |  Metrics: {'Relation_accuracy': 27.430924548352813, 'Attribute_accuracy': 30.583101943673146, 'Category_accuracy': 23.352713178294575, 'Location_accuracy': 18.706697459584294, 'Weather_accuracy': 10.843373493975903, 'Overall_accuracy': 26.958959309710483, 'E_accuracy': 0.0}
