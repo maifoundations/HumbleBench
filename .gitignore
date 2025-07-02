@@ -36,12 +36,7 @@ checkpoints/
 runs/
 wandb/
 logs/
-
-# PyTorch lightning cache
-.lightning/
-
-# Debugger
-pdb.out
+.cache/
 
 # Misc
 *.zip
@@ -54,7 +49,7 @@ pdb.out
 .pipyrc
 
 # TODO markdown files
-*.md
+TODO.md
 
 # cache file
 .cache
