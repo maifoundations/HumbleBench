@@ -1,19 +1,19 @@
 {
     "Accuracy": {
-        "Relation_accuracy": 42.229011689691816,
-        "Attribute_accuracy": 36.4141213804046,
-        "Category_accuracy": 27.03488372093023,
-        "Location_accuracy": 64.66512702078522,
-        "Weather_accuracy": 42.168674698795186,
-        "Overall_accuracy": 35.920459025009855,
-        "E_accuracy": 3.1870114251352977
+        "Relation_accuracy": 18.570669500531352,
+        "Attribute_accuracy": 24.20996958878752,
+        "Category_accuracy": 21.622369878183832,
+        "Location_accuracy": 28.17551963048499,
+        "Weather_accuracy": 14.457831325301203,
+        "Overall_accuracy": 21.571547457404407,
+        "E_accuracy": 84.57606734816596
     },
     "Proportions": {
-        "A_proportion": 24.966054925320837,
-        "B_proportion": 25.97345714160571,
-        "C_proportion": 19.53046296701853,
-        "D_proportion": 10.065262143576716,
-        "E_proportion": 19.46476282247821,
+        "A_proportion": 3.477727651000832,
+        "B_proportion": 8.50597871315317,
+        "C_proportion": 6.753974858744689,
+        "D_proportion": 2.37396522272349,
+        "E_proportion": 78.88835355437782,
         "NA_proportion": 0.0
     },
     "model_name_or_path": "Gemma-3",
