@@ -34,7 +34,7 @@ def load_jsonl(file_path: str) -> List[Dict]:
 # TODO: return type
 def download_dataset(path: str = None):
     if path is None:
-        dataset = load_dataset("tbbbk/mcha_tmp", split="train")
+        dataset = load_dataset("maifoundations/MCHA", split="train")
     else:
         dataset = load_dataset(path, split="train")
     return dataset.to_list()

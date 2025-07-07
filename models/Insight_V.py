@@ -90,7 +90,15 @@ def preprocess_llama3(
             if encode_id == image_token_index:
                 input_id[idx] = IMAGE_TOKEN_INDEX
         input_ids.append(input_id)
-    input_ids = torch.tensor(input_ids, dtype=torch.long)
+        
+    def left_pad(input_ids: List[List[int]], pad_token_id: int = 0) -> List[List[int]]:
+        max_len = max(len(seq) for seq in input_ids)
+        padded = [
+            [pad_token_id] * (max_len - len(seq)) + seq
+            for seq in input_ids
+        ]
+        return padded
+    input_ids = torch.tensor(left_pad(input_ids), dtype=torch.long)
 
     return input_ids
 
@@ -137,9 +145,10 @@ class Insight_V(nn.Module):
         self.conv_mode = "llava_llama_3"
         self.cot_prompt = """
         <image>{question}\n\n
-        Answer the question with the options provided.\n\n
-        Perform step-by-step reasoning of the problem. Only provide the reasoning process.
+        Give me your answer explicitly with the option (A, B, C, D, or E)\n\n
         """
+        self.model._tokenizer.padding_side = "left"
+        self.model._tokenizer.pad_token = self.model._tokenizer.bos_token
     
     def infer(self, messages: List[Dict]) -> List[str]:
         images = []
@@ -170,7 +179,7 @@ class Insight_V(nn.Module):
             gen_kwargs["num_beams"] = 1
         gen_kwargs["image_sizes"] = [image.size for image in images]
 
-        cont = self.model._model.generate(
+        output_ids = self.model._model.generate(
             input_ids,
             attention_mask=attention_masks,
             pad_token_id=pad_token_ids,
@@ -180,6 +189,6 @@ class Insight_V(nn.Module):
             max_new_tokens=gen_kwargs["max_new_tokens"],
             use_cache=True,
         )
-        text_outputs = self.model._tokenizer.batch_decode(cont, skip_special_tokens=True)
+        text_outputs = self.model._tokenizer.batch_decode(output_ids, skip_special_tokens=True)
         import pdb; pdb.set_trace()
         print(text_outputs)
