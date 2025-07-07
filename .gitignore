@@ -60,3 +60,7 @@ dist*
 
 # Hugging Face Hub upload
 test/
+
+# # Statistics analysis in paper
+# stat/
+*.pdf

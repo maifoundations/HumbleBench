@@ -1,10 +1,10 @@
 #!/bin/bash
 
-export CUDA_VISIBLE_DEVICES=1
+export CUDA_VISIBLE_DEVICES=0
 
 /home/bingkui/miniconda3/envs/qwenvl25/bin/python \
     main.py \
     --model "Insight-V" \
     --config configs/models.yaml \
-    --batch_size 8 \
+    --batch_size 1 \
     --log_dir results/common
