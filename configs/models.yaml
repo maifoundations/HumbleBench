@@ -50,6 +50,16 @@ models:
   Cambrian:
     params:
       model_name_or_path: "/mnt/data2/bingkui/model_zoo/cambrian-8b/"
+  VILA1.5:
+    params:
+      model_name_or_path: "/mnt/data2/bingkui/model_zoo/Llama-3-VILA1.5-8B"
+  Idefics3:
+    params:
+      model_name_or_path: "/mnt/data2/bingkui/model_zoo/Idefics3-8B-Llama3"
+  GLM-4.1V:
+    params:
+      model_name_or_path: "/mnt/data2/bingkui/model_zoo/GLM-4.1V-9B-Thinking"
+
 
 
 # dataset config

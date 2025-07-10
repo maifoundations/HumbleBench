@@ -38,7 +38,7 @@ sns.set_context("paper", font_scale=1.4)
 plt.close('all')
 
 # --- 创建画布 ---
-fig, ax = plt.subplots(figsize=(12, 16), dpi=300)
+fig, ax = plt.subplots(figsize=(12, 14), dpi=300)
 
 # --- 绘制横向柱状图，调整柱子厚度 ---
 sns.barplot(
@@ -94,7 +94,7 @@ for p in ax.patches:
 
 # --- 添加红色虚线 (random guess) 并加入图例标签 ---
 ax.axvline(
-    26,
+    20,
     color='red',
     linestyle='--',
     linewidth=1.5,
