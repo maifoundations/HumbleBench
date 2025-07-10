@@ -70,7 +70,6 @@ if version.parse(transformers.__version__) >= version.parse("4.51"):
             for msg, out in zip(messages, outputs):
                 text = out.outputs[0].text.strip()
                 if "<answer>" in text:
-                    
                     text = text.split("<answer>")[-1].replace("</answer>", "").strip()
                 results.append({
                     **msg,

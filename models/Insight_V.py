@@ -190,5 +190,5 @@ class Insight_V(nn.Module):
             use_cache=True,
         )
         text_outputs = self.model._tokenizer.batch_decode(output_ids, skip_special_tokens=True)
-        import pdb; pdb.set_trace()
+
         print(text_outputs)
