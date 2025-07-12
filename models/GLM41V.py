@@ -20,7 +20,7 @@ if version.parse(transformers.__version__) == version.parse("4.54.0.dev0"):
                 pretrained_model_name_or_path=model_name_or_path,
                 torch_dtype=torch.bfloat16,
                 device_map="auto",
-            ).to(self.device)
+            )
             self.processor.tokenizer.padding_side = "left"
 
         def infer(self, messages: List[Dict]) -> List[str]:
