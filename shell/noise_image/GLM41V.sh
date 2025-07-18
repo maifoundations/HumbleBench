@@ -7,5 +7,5 @@ export CUDA_VISIBLE_DEVICES=2,3
     --model "GLM-4.1V" \
     --config configs/models.yaml \
     --batch_size 16 \
-    --log_dir results/common \
+    --log_dir results/noise_image \
     --use_noise_image
