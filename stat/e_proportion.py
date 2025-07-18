@@ -5,23 +5,27 @@ import matplotlib.font_manager as fm
 models = [
     'LLaMA-3', 'Molmo-D', 'DeepSeek-VL2', 'R1-VL', 'LLaVA-Next',
     'Visionary-R1', 'LLaVA-CoT', 'Mulberry', 'InternVL3', 'Phi-4',
-    'Pixtral', 'Gemma-3', 'R1-Onevision', 'Cambrian', 'Qwen2.5-VL', 'Ovis-2'
+    'Pixtral', 'Gemma-3', 'R1-Onevision', 'Cambrian', 'Qwen2.5-VL', 'Ovis-2',
+    'VILA1.5', 'Idefics3', 'GLM-4.1V-Thinking'
 ]
 x_values = [
     65.31, 67.31, 61.55, 68.73, 65.29, 69.65, 66.79, 59.93,
-    70.19, 67.28, 66.63, 59.48, 66.89, 55.56, 72.20, 62.77
+    70.19, 67.28, 66.63, 59.48, 66.89, 55.56, 72.20, 62.77,
+    62.66, 68.24, 73.46
 ]
 y_values = [
     19.00, 17.14, 71.04, 63.84, 67.42, 56.45, 55.37, 51.97,
-    37.75, 28.19, 69.28, 78.89, 83.38, 82.33, 90.53, 29.80
+    37.75, 28.19, 69.28, 78.89, 83.38, 82.33, 90.53, 29.80,
+    12.75, 57.75, 77.32
 ]
 
 # --- 加载字体 ---
 font_path = '/home/bingkui/.fonts/times.ttf'
 prop = fm.FontProperties(fname=font_path)
 
-# --- 定义每个点的 marker 列表（长度 >= 模型数量） ---
-markers = ['o', 's', '^', 'D', 'v', 'p', '*', 'X', 'H', 'P', '+', 'x', 'd', '<', '>', '1']
+# --- 定义每个点的 marker 列表（长度 >= 模型数量） 
+markers = ['o', 's', '^', 'D', 'v', 'p', '*', 'X', 'H', 'P', '+', 'x', 'd', '<', '>', '1', '|', '_', '.']
+
 
 
 # --- 绘图 ---

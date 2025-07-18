@@ -1,6 +1,6 @@
 [project]
 name = "mcha"
-version = "0.3.0"
+version = "0.1.0"
 description = "a tool for mcha"
 authors = [{ name="Bingkui Tong", email="bingkuitong@gmail.com" }]
 license = "MIT"

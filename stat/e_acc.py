@@ -19,16 +19,17 @@ else:
 data = {
     'Model': [
         'Cambrian', 'Pixtral', 'R1-Onevision', 'Visionary-R1', 'Qwen2.5-VL',
-        'R1-VL', 'Gemma-3', 'InternVL3', 'Mulberry', 'Phi-4',
-        'DeepSeek-VL2', 'Ovis-2', 'LLaMA-3.2', 'Molmo-D', 'LLaVA-CoT',
-        'LLaVA-Next'
+        'R1-VL', 'Gemma-3', 'InternVL3', 'Mulberry', 'Phi-4', 'VILA1.5',
+        'DeepSeek-VL2', 'Ovis-2', 'GLM-4.1V-Thinking', 'LLaMA-3.2', 'Molmo-D', 'LLaVA-CoT',
+        'LLaVA-Next', 'Idefics3'
     ],
     'E Acc (%)': [
         65.33, 38.63, 35.87, 34.03, 32.41, 20.41, 20.14, 19.57,
-        16.93, 16.84, 8.09, 0.72, 0.03, 0.00, 0.00, 0.00
+        16.93, 16.84, 13.11, 8.09, 0.72, 0.06, 0.03, 0.00, 0.00, 0.00, 0.00, 
     ]
 }
 df = pd.DataFrame(data)
+df.sort_values(by='E Acc (%)', ascending=False)
 
 # --- 设置绘图主题 ---
 sns.set_theme(style="whitegrid")
@@ -38,7 +39,7 @@ sns.set_context("paper", font_scale=1.4)
 plt.close('all')
 
 # --- 创建画布 ---
-fig, ax = plt.subplots(figsize=(12, 14), dpi=300)
+fig, ax = plt.subplots(figsize=(13, 14), dpi=300)
 
 # --- 绘制横向柱状图，调整柱子厚度 ---
 sns.barplot(

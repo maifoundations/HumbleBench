@@ -1,0 +1,21 @@
+{
+    "Accuracy": {
+        "Relation_accuracy": 21.944739638682254,
+        "Attribute_accuracy": 23.852968398783553,
+        "Category_accuracy": 22.425249169435215,
+        "Location_accuracy": 32.10161662817552,
+        "Weather_accuracy": 13.253012048192772,
+        "Overall_accuracy": 22.889930357846787,
+        "E_accuracy": 0.03006614552014432
+    },
+    "Proportions": {
+        "A_proportion": 4.778590512899129,
+        "B_proportion": 5.549472208838859,
+        "C_proportion": 6.079453374797424,
+        "D_proportion": 5.62393237265122,
+        "E_proportion": 77.32031010468224,
+        "NA_proportion": 0.6482414261311376
+    },
+    "model_name_or_path": "GLM-4.1V",
+    "use_noise_image": true
+}

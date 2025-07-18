@@ -31,8 +31,7 @@ def load_jsonl(file_path: str) -> List[Dict]:
     return data
 
 
-# TODO: return type
-def download_dataset(path: str = None):
+def download_dataset(path: str = None) -> List[Dict]:
     if path is None:
         dataset = load_dataset("maifoundations/MCHA", split="train")
     else:
