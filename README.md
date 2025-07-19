@@ -1,6 +1,6 @@
 # **MCHA: Multiple-Choice Hallucination Assessments**
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)|[![arXiv](https://img.shields.io/badge/arXiv-2405.12345-b31b1b.svg)](TODO)|[![PyPI](https://img.shields.io/pypi/v/mcha.svg)](https://pypi.org/project/mcha/)|[![HuggingFace](https://img.shields.io/badge/HuggingFace-MCHA-yellow.svg)](https://huggingface.co/datasets/maifoundations/MCHA)
+![License](https://img.shields.io/badge/license-MIT-blue.svg) [![arXiv](https://img.shields.io/badge/arXiv-2405.12345-b31b1b.svg)](TODO) [![PyPI](https://img.shields.io/pypi/v/mcha.svg)](https://pypi.org/project/mcha/) [![HuggingFace](https://img.shields.io/badge/HuggingFace-MCHA-yellow.svg)](https://huggingface.co/datasets/maifoundations/MCHA)
 
 > A large‑scale benchmark for diagnosing and measuring visual hallucinations in vision–language models.
 
@@ -8,8 +8,6 @@
 Vision–language models often generate text that looks fluent but doesn’t faithfully reflect the image—so‑called *hallucinations*. Traditional “forced‑choice” evaluations mask a model’s true tendency to invent unsupported details and fail to cover diverse error types. By breaking free from forced‑choice paradigms, MCHA offers the most incisive assessment to date of whether vision–language models truly “see” what they describe.
 
 ------
-
-[TOC]
 
 ## 📦 Installation
 
