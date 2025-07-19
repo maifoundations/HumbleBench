@@ -1,0 +1,21 @@
+{
+    "Accuracy": {
+        "Relation_accuracy": 48.59192348565356,
+        "Attribute_accuracy": 40.48657939970911,
+        "Category_accuracy": 32.115171650055366,
+        "Location_accuracy": 38.106235565819865,
+        "Weather_accuracy": 69.87951807228916,
+        "Overall_accuracy": 40.57202925846437,
+        "E_accuracy": 23.60192423331329
+    },
+    "Proportions": {
+        "A_proportion": 17.42367833209233,
+        "B_proportion": 30.940388068853753,
+        "C_proportion": 20.75248565546844,
+        "D_proportion": 18.137619902763785,
+        "E_proportion": 12.74582804082169,
+        "NA_proportion": 0.0
+    },
+    "model_name_or_path": "VILA1.5",
+    "use_noise_image": true
+}

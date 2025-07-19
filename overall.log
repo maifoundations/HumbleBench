@@ -1,0 +1,798 @@
+{
+    'Accuracy': {
+        'Relation_accuracy': 64.24017003188098,
+        'Attribute_accuracy': 72.28612984265503,
+        'Category_accuracy': 57.55813953488372,
+        'Location_accuracy': 88.2217090069284,
+        'Weather_accuracy': 83.13253012048193,
+        'Overall_accuracy': 65.31470369234812,
+        'E_accuracy': 0.03006614552014432
+    },
+    'Proportions': {
+        'A_proportion': 19.228242302133065,
+        'B_proportion': 25.785116727256803,
+        'C_proportion': 31.11996846393062,
+        'D_proportion': 21.851868074109763,
+        'E_proportion': 2.014804432569752,
+        'NA_proportion': 0.0
+    },
+    'model_name_or_path': 'LLaMA-3',
+    'use_noise_image': False
+}
+{
+    'Accuracy': {
+        'Relation_accuracy': 65.24973432518597,
+        'Attribute_accuracy': 73.29102208118472,
+        'Category_accuracy': 61.54485049833887,
+        'Location_accuracy': 93.0715935334873,
+        'Weather_accuracy': 77.10843373493977,
+        'Overall_accuracy': 67.31198808637379,
+        'E_accuracy': 0.0
+    },
+    'Proportions': {
+        'A_proportion': 22.110288642635016,
+        'B_proportion': 23.941132670491875,
+        'C_proportion': 27.97950155490342,
+        'D_proportion': 23.949892689763917,
+        'E_proportion': 2.019184442205773,
+        'NA_proportion': 0.0
+    },
+    'model_name_or_path': 'Molmo-D',
+    'use_noise_image': False
+}
+{
+    'Accuracy': {
+        'Relation_accuracy': 56.947396386822525,
+        'Attribute_accuracy': 67.93600423112521,
+        'Category_accuracy': 58.111849390919154,
+        'Location_accuracy': 86.14318706697459,
+        'Weather_accuracy': 67.46987951807229,
+        'Overall_accuracy': 61.54789540536989,
+        'E_accuracy': 8.087793144918821
+    },
+    'Proportions': {
+        'A_proportion': 33.174192983224565,
+        'B_proportion': 22.17598878717533,
+        'C_proportion': 24.072532959572513,
+        'D_proportion': 17.147737725022996,
+        'E_proportion': 2.8251062152336734,
+        'NA_proportion': 0.6044413297709255
+    },
+    'model_name_or_path': 'DeepSeek-VL2',
+    'use_noise_image': False
+}
+{
+    'Accuracy': {
+        'Relation_accuracy': 67.9596174282678,
+        'Attribute_accuracy': 73.06624355414519,
+        'Category_accuracy': 63.59357696566998,
+        'Location_accuracy': 89.83833718244803,
+        'Weather_accuracy': 79.51807228915662,
+        'Overall_accuracy': 68.72673119880864,
+        'E_accuracy': 20.41491280817799
+    },
+    'Proportions': {
+        'A_proportion': 20.12614427751741,
+        'B_proportion': 23.507511716525777,
+        'C_proportion': 30.462967018527443,
+        'D_proportion': 21.085366387806054,
+        'E_proportion': 4.818010599623319,
+        'NA_proportion': 0.0
+    },
+    'model_name_or_path': 'R1-VL',
+    'use_noise_image': False
+}
+{
+    'Accuracy': {
+        'Relation_accuracy': 61.60998937300744,
+        'Attribute_accuracy': 71.16223720745735,
+        'Category_accuracy': 61.03266888150609,
+        'Location_accuracy': 95.61200923787528,
+        'Weather_accuracy': 77.10843373493977,
+        'Overall_accuracy': 65.29280364416802,
+        'E_accuracy': 0.0
+    },
+    'Proportions': {
+        'A_proportion': 25.106215233673513,
+        'B_proportion': 23.857912487407475,
+        'C_proportion': 27.204239849327667,
+        'D_proportion': 20.266304585870092,
+        'E_proportion': 3.5653278437212563,
+        'NA_proportion': 0.0
+    },
+    'model_name_or_path': 'LLaVA-Next',
+    'use_noise_image': False
+}
+{
+    'Accuracy': {
+        'Relation_accuracy': 66.69766206163655,
+        'Attribute_accuracy': 74.6925823086077,
+        'Category_accuracy': 65.7530454042082,
+        'Location_accuracy': 94.91916859122402,
+        'Weather_accuracy': 84.33734939759037,
+        'Overall_accuracy': 69.64653322237308,
+        'E_accuracy': 34.03487672880337
+    },
+    'Proportions': {
+        'A_proportion': 20.244404537689984,
+        'B_proportion': 22.504489509876922,
+        'C_proportion': 27.848101265822784,
+        'D_proportion': 20.95834610836144,
+        'E_proportion': 8.444658578248871,
+        'NA_proportion': 0.0
+    },
+    'model_name_or_path': 'Visionary-R1',
+    'use_noise_image': False
+}
+{
+    'Accuracy': {
+        'Relation_accuracy': 65.0903294367694,
+        'Attribute_accuracy': 72.39190797302658,
+        'Category_accuracy': 60.85271317829457,
+        'Location_accuracy': 94.45727482678984,
+        'Weather_accuracy': 83.13253012048193,
+        'Overall_accuracy': 66.79076693968726,
+        'E_accuracy': 0.0
+    },
+    'Proportions': {
+        'A_proportion': 19.412202706845953,
+        'B_proportion': 21.86500810301783,
+        'C_proportion': 27.396960273312605,
+        'D_proportion': 22.552669615873157,
+        'E_proportion': 7.520476545048399,
+        'NA_proportion': 1.252682755902063
+    },
+    'model_name_or_path': 'LLaVA-CoT',
+    'use_noise_image': False
+}
+{
+    'Accuracy': {
+        'Relation_accuracy': 55.92454835281615,
+        'Attribute_accuracy': 65.04032791220415,
+        'Category_accuracy': 56.907530454042075,
+        'Location_accuracy': 87.29792147806005,
+        'Weather_accuracy': 78.3132530120482,
+        'Overall_accuracy': 59.93167184967807,
+        'E_accuracy': 16.92723992784125
+    },
+    'Proportions': {
+        'A_proportion': 21.32626691778722,
+        'B_proportion': 22.425649336428542,
+        'C_proportion': 22.771670097674214,
+        'D_proportion': 19.096842013052427,
+        'E_proportion': 4.415049713109369,
+        'NA_proportion': 9.96452192194823
+    },
+    'model_name_or_path': 'Mulberry',
+    'use_noise_image': False
+}
+{
+    'Accuracy': {
+        'Relation_accuracy': 65.78108395324124,
+        'Attribute_accuracy': 74.98347216712945,
+        'Category_accuracy': 61.91860465116279,
+        'Location_accuracy': 96.07390300230946,
+        'Weather_accuracy': 81.92771084337349,
+        'Overall_accuracy': 68.24055012921029,
+        'E_accuracy': 0.0
+    },
+    'Proportions': {
+        'A_proportion': 20.209364460601815,
+        'B_proportion': 23.043230695107532,
+        'C_proportion': 27.988261574175468,
+        'D_proportion': 22.526389558057026,
+        'E_proportion': 6.232753712058167,
+        'NA_proportion': 0.0
+    },
+    'model_name_or_path': 'Idefics3',
+    'use_noise_image': False
+}
+{
+    'Accuracy': {
+        'Relation_accuracy': 68.13230605738576,
+        'Attribute_accuracy': 74.8776940367579,
+        'Category_accuracy': 65.8499446290144,
+        'Location_accuracy': 94.91916859122402,
+        'Weather_accuracy': 79.51807228915662,
+        'Overall_accuracy': 70.19403442687575,
+        'E_accuracy': 19.57306073361395
+    },
+    'Proportions': {
+        'A_proportion': 21.58030747667645,
+        'B_proportion': 23.489991677981692,
+        'C_proportion': 27.961981516359337,
+        'D_proportion': 22.303009066619946,
+        'E_proportion': 4.629670185274408,
+        'NA_proportion': 0.03504007708816959
+    },
+    'model_name_or_path': 'InternVL3',
+    'use_noise_image': False
+}
+{
+    'Accuracy': {
+        'Relation_accuracy': 64.34643995749202,
+        'Attribute_accuracy': 72.47124157080523,
+        'Category_accuracy': 63.17829457364341,
+        'Location_accuracy': 93.30254041570439,
+        'Weather_accuracy': 81.92771084337349,
+        'Overall_accuracy': 67.28132801892164,
+        'E_accuracy': 16.837041491280818
+    },
+    'Proportions': {
+        'A_proportion': 24.41855372081819,
+        'B_proportion': 23.691472121238665,
+        'C_proportion': 27.48894047566905,
+        'D_proportion': 21.085366387806054,
+        'E_proportion': 3.3156672944680476,
+        'NA_proportion': 0.0
+    },
+    'model_name_or_path': 'Phi-4',
+    'use_noise_image': False
+}
+{
+    'Accuracy': {
+        'Relation_accuracy': 64.73166843783208,
+        'Attribute_accuracy': 72.77535369562344,
+        'Category_accuracy': 60.22978959025471,
+        'Location_accuracy': 96.53579676674366,
+        'Weather_accuracy': 79.51807228915662,
+        'Overall_accuracy': 66.62870658315448,
+        'E_accuracy': 38.63499699338544
+    },
+    'Proportions': {
+        'A_proportion': 19.013621829968024,
+        'B_proportion': 21.82996802592966,
+        'C_proportion': 27.2524199553239,
+        'D_proportion': 19.263282379221234,
+        'E_proportion': 12.627567780649118,
+        'NA_proportion': 0.013140028908063596
+    },
+    'model_name_or_path': 'Pixtral',
+    'use_noise_image': False
+}
+{
+    'Accuracy': {
+        'Relation_accuracy': 56.38947927736451,
+        'Attribute_accuracy': 68.61033981224381,
+        'Category_accuracy': 50.70598006644518,
+        'Location_accuracy': 96.30484988452656,
+        'Weather_accuracy': 78.3132530120482,
+        'Overall_accuracy': 59.47615084753186,
+        'E_accuracy': 20.14431749849669
+    },
+    'Proportions': {
+        'A_proportion': 20.586045289299637,
+        'B_proportion': 29.455564802242566,
+        'C_proportion': 27.93570145854321,
+        'D_proportion': 16.61337654942841,
+        'E_proportion': 5.4093119004861805,
+        'NA_proportion': 0.0
+    },
+    'model_name_or_path': 'Gemma-3',
+    'use_noise_image': False
+}
+{
+    'Accuracy': {
+        'Relation_accuracy': 65.1567481402763,
+        'Attribute_accuracy': 72.10101811450483,
+        'Category_accuracy': 61.434108527131784,
+        'Location_accuracy': 94.45727482678984,
+        'Weather_accuracy': 79.51807228915662,
+        'Overall_accuracy': 66.88712715167973,
+        'E_accuracy': 35.86891160553217
+    },
+    'Proportions': {
+        'A_proportion': 19.162542157592746,
+        'B_proportion': 21.737987823573214,
+        'C_proportion': 26.14865752704656,
+        'D_proportion': 20.261924576234065,
+        'E_proportion': 11.777845911261005,
+        'NA_proportion': 0.9110420042924094
+    },
+    'model_name_or_path': 'R1-Onevision',
+    'use_noise_image': False
+}
+{
+    'Accuracy': {
+        'Relation_accuracy': 53.17481402763018,
+        'Attribute_accuracy': 61.285204284014284,
+        'Category_accuracy': 49.390919158361015,
+        'Location_accuracy': 96.53579676674366,
+        'Weather_accuracy': 74.69879518072288,
+        'Overall_accuracy': 55.56480224256494,
+        'E_accuracy': 65.3337342152736
+    },
+    'Proportions': {
+        'A_proportion': 17.988699575139066,
+        'B_proportion': 14.909552801016163,
+        'C_proportion': 18.396040471289037,
+        'D_proportion': 14.716832377031231,
+        'E_proportion': 33.98887477552451,
+        'NA_proportion': 0.0
+    },
+    'model_name_or_path': 'Cambrian',
+    'use_noise_image': False
+}
+{
+    'Accuracy': {
+        'Relation_accuracy': 70.43039319872476,
+        'Attribute_accuracy': 76.75525585085283,
+        'Category_accuracy': 67.77408637873754,
+        'Location_accuracy': 96.30484988452656,
+        'Weather_accuracy': 77.10843373493977,
+        'Overall_accuracy': 72.20007884017346,
+        'E_accuracy': 32.411304870715576
+    },
+    'Proportions': {
+        'A_proportion': 19.166922167228766,
+        'B_proportion': 23.284131225088693,
+        'C_proportion': 27.475800446760985,
+        'D_proportion': 22.613989750777453,
+        'E_proportion': 7.459156410144102,
+        'NA_proportion': 0.0
+    },
+    'model_name_or_path': 'Qwen2.5-VL',
+    'use_noise_image': False
+}
+{
+    'Accuracy': {
+        'Relation_accuracy': 62.473432518597235,
+        'Attribute_accuracy': 71.0829036096787,
+        'Category_accuracy': 51.993355481727576,
+        'Location_accuracy': 94.68822170900692,
+        'Weather_accuracy': 73.49397590361446,
+        'Overall_accuracy': 62.66041785291928,
+        'E_accuracy': 13.108839446782921
+    },
+    'Proportions': {
+        'A_proportion': 18.772721299986863,
+        'B_proportion': 30.305286671630675,
+        'C_proportion': 27.12977968551531,
+        'D_proportion': 21.396347071963557,
+        'E_proportion': 2.3958652709035957,
+        'NA_proportion': 0.0
+    },
+    'model_name_or_path': 'VILA1.5',
+    'use_noise_image': False
+}
+{
+    'Accuracy': {
+        'Relation_accuracy': 60.98565356004251,
+        'Attribute_accuracy': 68.1740050244612,
+        'Category_accuracy': 58.236434108527135,
+        'Location_accuracy': 73.21016166281755,
+        'Weather_accuracy': 73.49397590361446,
+        'Overall_accuracy': 62.77429810345583,
+        'E_accuracy': 0.7215874924834637
+    },
+    'Proportions': {
+        'A_proportion': 21.751127852481275,
+        'B_proportion': 19.727563400639482,
+        'C_proportion': 23.792212342867156,
+        'D_proportion': 18.566860847093864,
+        'E_proportion': 3.394507467916429,
+        'NA_proportion': 12.767728089001796
+    },
+    'model_name_or_path': 'Ovis-2',
+    'use_noise_image': False
+}
+{
+    'Accuracy': {
+        'Relation_accuracy': 71.25398512221042,
+        'Attribute_accuracy': 78.19648287716514,
+        'Category_accuracy': 69.296788482835,
+        'Location_accuracy': 96.30484988452656,
+        'Weather_accuracy': 85.54216867469879,
+        'Overall_accuracy': 73.46152161534756,
+        'E_accuracy': 0.06013229104028864
+    },
+    'Proportions': {
+        'A_proportion': 20.713065568744252,
+        'B_proportion': 22.557049625509176,
+        'C_proportion': 26.174937584862683,
+        'D_proportion': 19.889623757172263,
+        'E_proportion': 9.89882177740791,
+        'NA_proportion': 0.7665016863037099
+    },
+    'model_name_or_path': 'GLM-4.1V',
+    'use_noise_image': False
+}
+{
+    'Accuracy': {
+        'Relation_accuracy': 45.00531349628055,
+        'Attribute_accuracy': 38.56935078672484,
+        'Category_accuracy': 33.33333333333333,
+        'Location_accuracy': 68.36027713625866,
+        'Weather_accuracy': 26.506024096385545,
+        'Overall_accuracy': 39.55586702290745,
+        'E_accuracy': 2.3451593505712567
+    },
+    'Proportions': {
+        'A_proportion': 19.381542639393807,
+        'B_proportion': 17.09955761902676,
+        'C_proportion': 26.306337873943324,
+        'D_proportion': 18.207700056940126,
+        'E_proportion': 19.004861810695985,
+        'NA_proportion': 0.0
+    },
+    'model_name_or_path': 'LLaMA-3',
+    'use_noise_image': True
+}
+{
+    'Accuracy': {
+        'Relation_accuracy': 39.519128586609995,
+        'Attribute_accuracy': 34.89356075631363,
+        'Category_accuracy': 32.55813953488372,
+        'Location_accuracy': 48.49884526558891,
+        'Weather_accuracy': 30.120481927710845,
+        'Overall_accuracy': 35.920459025009855,
+        'E_accuracy': 0.0
+    },
+    'Proportions': {
+        'A_proportion': 27.821821208006657,
+        'B_proportion': 13.832070430554946,
+        'C_proportion': 19.02676185887609,
+        'D_proportion': 22.17598878717533,
+        'E_proportion': 17.143357715386973,
+        'NA_proportion': 0.0
+    },
+    'model_name_or_path': 'Molmo-D',
+    'use_noise_image': True
+}
+{
+    'Accuracy': {
+        'Relation_accuracy': 18.690223166843783,
+        'Attribute_accuracy': 20.91762528097316,
+        'Category_accuracy': 23.57419712070875,
+        'Location_accuracy': 23.325635103926096,
+        'Weather_accuracy': 14.457831325301203,
+        'Overall_accuracy': 21.045946301081862,
+        'E_accuracy': 78.23211064341551
+    },
+    'Proportions': {
+        'A_proportion': 10.665323463711621,
+        'B_proportion': 8.457798607156935,
+        'C_proportion': 4.458849809469581,
+        'D_proportion': 5.36989181376199,
+        'E_proportion': 71.03937628662783,
+        'NA_proportion': 0.008760019272042398
+    },
+    'model_name_or_path': 'DeepSeek-VL2',
+    'use_noise_image': True
+}
+{
+    'Accuracy': {
+        'Relation_accuracy': 24.46865037194474,
+        'Attribute_accuracy': 30.51699061219093,
+        'Category_accuracy': 23.864894795127352,
+        'Location_accuracy': 31.639722863741337,
+        'Weather_accuracy': 14.457831325301203,
+        'Overall_accuracy': 26.38079803775568,
+        'E_accuracy': 70.65544197233915
+    },
+    'Proportions': {
+        'A_proportion': 6.959835311637685,
+        'B_proportion': 8.29573825062415,
+        'C_proportion': 11.624545574000262,
+        'D_proportion': 9.268100389820857,
+        'E_proportion': 63.83864044500898,
+        'NA_proportion': 0.013140028908063596
+    },
+    'model_name_or_path': 'R1-VL',
+    'use_noise_image': True
+}
+{
+    'Accuracy': {
+        'Relation_accuracy': 23.29968119022317,
+        'Attribute_accuracy': 28.057649081052492,
+        'Category_accuracy': 22.99280177187154,
+        'Location_accuracy': 19.630484988452658,
+        'Weather_accuracy': 18.072289156626507,
+        'Overall_accuracy': 24.6901143182515,
+        'E_accuracy': 0.0
+    },
+    'Proportions': {
+        'A_proportion': 11.261004774210503,
+        'B_proportion': 6.149533528973763,
+        'C_proportion': 8.142437913363409,
+        'D_proportion': 7.0299154658140255,
+        'E_proportion': 67.4171083176383,
+        'NA_proportion': 0.0
+    },
+    'model_name_or_path': 'LLaVA-Next',
+    'use_noise_image': True
+}
+{
+    'Accuracy': {
+        'Relation_accuracy': 29.277364505844844,
+        'Attribute_accuracy': 28.2427608092027,
+        'Category_accuracy': 26.328903654485046,
+        'Location_accuracy': 16.628175519630485,
+        'Weather_accuracy': 13.253012048192772,
+        'Overall_accuracy': 27.703560947834085,
+        'E_accuracy': 63.83042693926638
+    },
+    'Proportions': {
+        'A_proportion': 12.732688011913625,
+        'B_proportion': 9.999561999036398,
+        'C_proportion': 12.158906749594848,
+        'D_proportion': 8.663659060049932,
+        'E_proportion': 56.445184179405196,
+        'NA_proportion': 0.0
+    },
+    'model_name_or_path': 'Visionary-R1',
+    'use_noise_image': True
+}
+{
+    'Accuracy': {
+        'Relation_accuracy': 27.430924548352813,
+        'Attribute_accuracy': 30.583101943673146,
+        'Category_accuracy': 23.352713178294575,
+        'Location_accuracy': 18.706697459584294,
+        'Weather_accuracy': 10.843373493975903,
+        'Overall_accuracy': 26.958959309710483,
+        'E_accuracy': 0.0
+    },
+    'Proportions': {
+        'A_proportion': 9.986421970128333,
+        'B_proportion': 11.366125005475013,
+        'C_proportion': 12.299067057947527,
+        'D_proportion': 10.586483290263239,
+        'E_proportion': 55.37208181858,
+        'NA_proportion': 0.38982085760588675
+    },
+    'model_name_or_path': 'LLaVA-CoT',
+    'use_noise_image': True
+}
+{
+    'Accuracy': {
+        'Relation_accuracy': 29.011689691817217,
+        'Attribute_accuracy': 27.608092026973424,
+        'Category_accuracy': 23.961794019933556,
+        'Location_accuracy': 31.177829099307157,
+        'Weather_accuracy': 15.66265060240964,
+        'Overall_accuracy': 26.941439271166395,
+        'E_accuracy': 57.69693325315694
+    },
+    'Proportions': {
+        'A_proportion': 11.151504533309973,
+        'B_proportion': 10.218562480837457,
+        'C_proportion': 10.389382856642285,
+        'D_proportion': 10.100302220664885,
+        'E_proportion': 51.968814331391535,
+        'NA_proportion': 6.17143357715387
+    },
+    'model_name_or_path': 'Mulberry',
+    'use_noise_image': True
+}
+{
+    'Accuracy': {
+        'Relation_accuracy': 33.38204038257173,
+        'Attribute_accuracy': 30.371545682930055,
+        'Category_accuracy': 24.363233665559246,
+        'Location_accuracy': 37.41339491916859,
+        'Weather_accuracy': 14.457831325301203,
+        'Overall_accuracy': 29.538784985326966,
+        'E_accuracy': 0.0
+    },
+    'Proportions': {
+        'A_proportion': 11.926766238885726,
+        'B_proportion': 8.317638298804257,
+        'C_proportion': 11.331084928386842,
+        'D_proportion': 10.669703473347642,
+        'E_proportion': 57.75480706057553,
+        'NA_proportion': 0.0
+    },
+    'model_name_or_path': 'Idefics3',
+    'use_noise_image': True
+}
+{
+    'Accuracy': {
+        'Relation_accuracy': 36.83581296493092,
+        'Attribute_accuracy': 35.382784609282034,
+        'Category_accuracy': 30.398671096345513,
+        'Location_accuracy': 43.187066974595844,
+        'Weather_accuracy': 24.096385542168676,
+        'Overall_accuracy': 34.39183566203845,
+        'E_accuracy': 48.1659651232712
+    },
+    'Proportions': {
+        'A_proportion': 17.3754982260961,
+        'B_proportion': 15.294993648986027,
+        'C_proportion': 16.149095528010164,
+        'D_proportion': 13.429109544040996,
+        'E_proportion': 37.75130305286672,
+        'NA_proportion': 0.0
+    },
+    'model_name_or_path': 'InternVL3',
+    'use_noise_image': True
+}
+{
+    'Accuracy': {
+        'Relation_accuracy': 43.57066950053135,
+        'Attribute_accuracy': 35.96456432632553,
+        'Category_accuracy': 36.337209302325576,
+        'Location_accuracy': 36.489607390300236,
+        'Weather_accuracy': 20.481927710843372,
+        'Overall_accuracy': 38.54408479698655,
+        'E_accuracy': 40.679494888755265
+    },
+    'Proportions': {
+        'A_proportion': 26.63483859664491,
+        'B_proportion': 16.153475537646184,
+        'C_proportion': 16.36809600981122,
+        'D_proportion': 12.653847838465246,
+        'E_proportion': 28.18974201743244,
+        'NA_proportion': 0.0
+    },
+    'model_name_or_path': 'Phi-4',
+    'use_noise_image': True
+}
+{
+    'Accuracy': {
+        'Relation_accuracy': 28.812433581296492,
+        'Attribute_accuracy': 27.88575961919873,
+        'Category_accuracy': 22.4390919158361,
+        'Location_accuracy': 73.21016166281755,
+        'Weather_accuracy': 10.843373493975903,
+        'Overall_accuracy': 27.265559984231963,
+        'E_accuracy': 79.13409500901984
+    },
+    'Proportions': {
+        'A_proportion': 5.7027725460996015,
+        'B_proportion': 7.8971573737462215,
+        'C_proportion': 9.911961806315974,
+        'D_proportion': 7.205115851254873,
+        'E_proportion': 69.28299242258333,
+        'NA_proportion': 0.0
+    },
+    'model_name_or_path': 'Pixtral',
+    'use_noise_image': True
+}
+{
+    'Accuracy': {
+        'Relation_accuracy': 18.570669500531352,
+        'Attribute_accuracy': 24.20996958878752,
+        'Category_accuracy': 21.622369878183832,
+        'Location_accuracy': 28.17551963048499,
+        'Weather_accuracy': 14.457831325301203,
+        'Overall_accuracy': 21.571547457404407,
+        'E_accuracy': 84.57606734816596
+    },
+    'Proportions': {
+        'A_proportion': 3.477727651000832,
+        'B_proportion': 8.50597871315317,
+        'C_proportion': 6.753974858744689,
+        'D_proportion': 2.37396522272349,
+        'E_proportion': 78.88835355437782,
+        'NA_proportion': 0.0
+    },
+    'model_name_or_path': 'Gemma-3',
+    'use_noise_image': True
+}
+{
+    'Accuracy': {
+        'Relation_accuracy': 11.410733262486715,
+        'Attribute_accuracy': 21.24818193838424,
+        'Category_accuracy': 18.646179401993354,
+        'Location_accuracy': 20.785219399538107,
+        'Weather_accuracy': 19.27710843373494,
+        'Overall_accuracy': 17.16525776356708,
+        'E_accuracy': 82.68190018039687
+    },
+    'Proportions': {
+        'A_proportion': 2.290745039639087,
+        'B_proportion': 3.2587271691997723,
+        'C_proportion': 3.556567824449214,
+        'D_proportion': 3.8018483640664007,
+        'E_proportion': 83.38224344093557,
+        'NA_proportion': 3.709868161709956
+    },
+    'model_name_or_path': 'R1-Onevision',
+    'use_noise_image': True
+}
+{
+    'Accuracy': {
+        'Relation_accuracy': 22.02444208289054,
+        'Attribute_accuracy': 26.960200978447705,
+        'Category_accuracy': 21.124031007751938,
+        'Location_accuracy': 20.092378752886837,
+        'Weather_accuracy': 19.27710843373494,
+        'Overall_accuracy': 23.327931321448908,
+        'E_accuracy': 89.80757666867108
+    },
+    'Proportions': {
+        'A_proportion': 4.826770618895361,
+        'B_proportion': 3.963908720599185,
+        'C_proportion': 4.756690464719022,
+        'D_proportion': 4.12596907713197,
+        'E_proportion': 82.32666111865447,
+        'NA_proportion': 0.0
+    },
+    'model_name_or_path': 'Cambrian',
+    'use_noise_image': True
+}
+{
+    'Accuracy': {
+        'Relation_accuracy': 11.224760892667375,
+        'Attribute_accuracy': 20.653179955044294,
+        'Category_accuracy': 21.08250276854928,
+        'Location_accuracy': 13.394919168591224,
+        'Weather_accuracy': 15.66265060240964,
+        'Overall_accuracy': 17.524418553720817,
+        'E_accuracy': 92.8141912206855
+    },
+    'Proportions': {
+        'A_proportion': 1.0512023126450878,
+        'B_proportion': 2.5228855503482106,
+        'C_proportion': 2.2557049625509173,
+        'D_proportion': 3.644168017169638,
+        'E_proportion': 90.52603915728614,
+        'NA_proportion': 0.0
+    },
+    'model_name_or_path': 'Qwen2.5-VL',
+    'use_noise_image': True
+}
+{
+    'Accuracy': {
+        'Relation_accuracy': 48.59192348565356,
+        'Attribute_accuracy': 40.48657939970911,
+        'Category_accuracy': 32.115171650055366,
+        'Location_accuracy': 38.106235565819865,
+        'Weather_accuracy': 69.87951807228916,
+        'Overall_accuracy': 40.57202925846437,
+        'E_accuracy': 23.60192423331329
+    },
+    'Proportions': {
+        'A_proportion': 17.42367833209233,
+        'B_proportion': 30.940388068853753,
+        'C_proportion': 20.75248565546844,
+        'D_proportion': 18.137619902763785,
+        'E_proportion': 12.74582804082169,
+        'NA_proportion': 0.0
+    },
+    'model_name_or_path': 'VILA1.5',
+    'use_noise_image': True
+}
+{
+    'Accuracy': {
+        'Relation_accuracy': 30.127523910733263,
+        'Attribute_accuracy': 25.29419542509586,
+        'Category_accuracy': 16.95736434108527,
+        'Location_accuracy': 36.72055427251732,
+        'Weather_accuracy': 40.963855421686745,
+        'Overall_accuracy': 24.523673952082696,
+        'E_accuracy': 1.0523150932050511
+    },
+    'Proportions': {
+        'A_proportion': 7.0605755332661735,
+        'B_proportion': 6.75835486838071,
+        'C_proportion': 8.352678375892426,
+        'D_proportion': 33.791774341903555,
+        'E_proportion': 29.79720555385222,
+        'NA_proportion': 14.239411326704918
+    },
+    'model_name_or_path': 'Ovis-2',
+    'use_noise_image': True
+}
+{
+    'Accuracy': {
+        'Relation_accuracy': 21.944739638682254,
+        'Attribute_accuracy': 23.852968398783553,
+        'Category_accuracy': 22.425249169435215,
+        'Location_accuracy': 32.10161662817552,
+        'Weather_accuracy': 13.253012048192772,
+        'Overall_accuracy': 22.889930357846787,
+        'E_accuracy': 0.03006614552014432
+    },
+    'Proportions': {
+        'A_proportion': 4.778590512899129,
+        'B_proportion': 5.549472208838859,
+        'C_proportion': 6.079453374797424,
+        'D_proportion': 5.62393237265122,
+        'E_proportion': 77.32031010468224,
+        'NA_proportion': 0.6482414261311376
+    },
+    'model_name_or_path': 'GLM-4.1V',
+    'use_noise_image': True
+}

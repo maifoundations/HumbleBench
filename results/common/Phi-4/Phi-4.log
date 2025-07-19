@@ -1,0 +1,3 @@
+[2025-06-20 23:24:45,417] INFO: [Model] Running model: Phi-4 with config: {'params': {'model_name_or_path': '/mnt/data2/bingkui/model_zoo/Phi-4-multimodal-instruct/'}}
+[2025-06-21 02:11:50,841] INFO: [Save] Model: Phi-4 | Saved 22831 results to results/common/Phi-4/Phi-4.jsonl
+[2025-06-21 02:11:51,024] INFO: [Metrics] Model: Phi-4 |  Metrics: {'Relation_accuracy': 64.34643995749202, 'Attribute_accuracy': 72.47124157080523, 'Category_accuracy': 63.17829457364341, 'Location_accuracy': 93.30254041570439, 'Weather_accuracy': 81.92771084337349, 'Overall_accuracy': 67.28132801892164, 'E_accuracy': 16.837041491280818}

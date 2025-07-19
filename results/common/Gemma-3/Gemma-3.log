@@ -1,0 +1,21 @@
+{
+    "Accuracy": {
+        "Relation_accuracy": 56.38947927736451,
+        "Attribute_accuracy": 68.61033981224381,
+        "Category_accuracy": 50.70598006644518,
+        "Location_accuracy": 96.30484988452656,
+        "Weather_accuracy": 78.3132530120482,
+        "Overall_accuracy": 59.47615084753186,
+        "E_accuracy": 20.14431749849669
+    },
+    "Proportions": {
+        "A_proportion": 20.586045289299637,
+        "B_proportion": 29.455564802242566,
+        "C_proportion": 27.93570145854321,
+        "D_proportion": 16.61337654942841,
+        "E_proportion": 5.4093119004861805,
+        "NA_proportion": 0.0
+    },
+    "model_name_or_path": "Gemma-3",
+    "use_noise_image": false
+}

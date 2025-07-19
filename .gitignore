@@ -1,0 +1,66 @@
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*.so
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# VSCode settings
+.vscode/
+
+# Environment files
+.env
+*.env
+*.venv
+.venv/
+env/
+venv/
+
+# MacOS/Linux
+.DS_Store
+Thumbs.db
+
+# Dataset outputs
+dataset/images/
+
+# Model checkpoints, large files
+*.ckpt
+*.pth
+*.pt
+*.bin
+
+# Output and result folders
+# results/
+checkpoints/
+runs/
+wandb/
+logs/
+.cache/
+
+# Misc
+*.zip
+*.tar
+*.tar.gz
+*.npy
+*.npz
+
+# Pypi distribution token
+.pipyrc
+
+# TODO markdown files
+TODO.md
+
+# cache file
+.cache
+
+# pypi distribution
+*.egg-info
+dist*
+
+# Hugging Face Hub upload
+test/
+
+# # Statistics analysis in paper
+# stat/
+*.pdf

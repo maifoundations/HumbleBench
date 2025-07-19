@@ -1,0 +1,21 @@
+{
+    "Accuracy": {
+        "Relation_accuracy": 56.947396386822525,
+        "Attribute_accuracy": 67.93600423112521,
+        "Category_accuracy": 58.111849390919154,
+        "Location_accuracy": 86.14318706697459,
+        "Weather_accuracy": 67.46987951807229,
+        "Overall_accuracy": 61.54789540536989,
+        "E_accuracy": 8.087793144918821
+    },
+    "Proportions": {
+        "A_proportion": 33.174192983224565,
+        "B_proportion": 22.17598878717533,
+        "C_proportion": 24.072532959572513,
+        "D_proportion": 17.147737725022996,
+        "E_proportion": 2.8251062152336734,
+        "NA_proportion": 0.6044413297709255
+    },
+    "model_name_or_path": "DeepSeek-VL2",
+    "use_noise_image": false
+}

@@ -1,0 +1,3 @@
+[2025-06-21 12:53:11,274] INFO: [Model] Running model: Mulberry with config: {'params': {'model_name_or_path': '/mnt/data2/bingkui/model_zoo/Mulberry_qwen2vl_7b/'}}
+[2025-06-22 04:47:39,159] INFO: [Save] Model: Mulberry | Saved 22831 results to results/common/Mulberry/Mulberry.jsonl
+[2025-06-22 04:47:39,368] INFO: [Metrics] Model: Mulberry |  Metrics: {'Relation_accuracy': 55.92454835281615, 'Attribute_accuracy': 65.04032791220415, 'Category_accuracy': 56.907530454042075, 'Location_accuracy': 87.29792147806005, 'Weather_accuracy': 78.3132530120482, 'Overall_accuracy': 59.93167184967807, 'E_accuracy': 16.92723992784125}
