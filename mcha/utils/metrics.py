@@ -17,6 +17,22 @@ def is_prediction_correct(
     answer: str,
     choices: Optional[List[str]] = ['A', 'B', 'C', 'D', 'E']
 ) -> bool:
+    """
+    Checks if a prediction is correct based on the ground truth answer.
+
+    A prediction is considered correct if:
+    1. It contains all the tokens of the correct answer.
+    2. It does not contain any tokens from the incorrect choices.
+
+    Args:
+        prediction (str): The model's prediction.
+        answer (str): The ground truth answer.
+        choices (Optional[List[str]], optional): A list of possible choices. 
+                                                 Defaults to ['A', 'B', 'C', 'D', 'E'].
+
+    Returns:
+        bool: True if the prediction is correct, False otherwise.
+    """
     pred_tokens = tokenize(prediction)
     ans_tokens  = tokenize(answer)
 
@@ -40,6 +56,20 @@ def is_prediction_correct(
 
 
 def extract_answer(answer: str, choices: Optional[List[str]] = ['a', 'b', 'c', 'd', 'e']) -> str:
+    """
+    Extracts a single choice letter from a given answer string.
+
+    It tokenizes the answer and finds the intersection with the given choices.
+    If exactly one choice is found, it's returned in uppercase. Otherwise, 'NA' is returned.
+
+    Args:
+        answer (str): The answer string to parse.
+        choices (Optional[List[str]], optional): A list of possible choices in lowercase. 
+                                                 Defaults to ['a', 'b', 'c', 'd', 'e'].
+
+    Returns:
+        str: The extracted choice letter (e.g., 'A') or 'NA' if not found.
+    """
     letters = tokenize(answer)
     intersection = letters.intersection(choices)
     if len(intersection) == 1:
@@ -49,6 +79,20 @@ def extract_answer(answer: str, choices: Optional[List[str]] = ['a', 'b', 'c', '
 
     
 def compute_metrics(input: List[Dict]) -> Dict:
+    """
+    Computes various metrics from a list of prediction results.
+
+    Calculates accuracy for different question types, overall accuracy,
+    and the distribution of predicted answer choices.
+
+    Args:
+        input (List[Dict]): A list of dictionaries, where each dictionary
+                            represents a sample with its prediction.
+
+    Returns:
+        Dict: A dictionary containing the computed metrics, including
+              'Accuracy' and 'Proportions'.
+    """
     metrics = dict()
     
     type_stats = defaultdict(lambda: [0, 0])
@@ -117,6 +161,23 @@ def compute_metrics(input: List[Dict]) -> Dict:
 
 
 def evaluate(input_data: Union[List[Dict], str], model_name_or_path: str = None, use_noise_image: bool = False) -> Dict:
+    """
+    Evaluates the model's performance on a given dataset.
+
+    This function can take either a list of dictionaries or a file path to a JSONL file.
+    It computes the metrics and prints the results.
+
+    Args:
+        input_data (Union[List[Dict], str]): The input data, either as a list of dictionaries
+                                             or a path to a JSONL file.
+        model_name_or_path (str, optional): The name or path of the model being evaluated. 
+                                            Defaults to None.
+        use_noise_image (bool, optional): Flag indicating if noise images were used. 
+                                          Defaults to False.
+
+    Returns:
+        Dict: A dictionary containing the evaluation results.
+    """
     if isinstance(input_data, str):
         data = load_jsonl(input_data)
     else:

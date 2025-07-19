@@ -8,6 +8,15 @@ from rich import print
 
 
 def validate_sample(sample: Dict) -> bool:
+    """
+    Validates a single sample against the Sample pydantic model.
+
+    Args:
+        sample (Dict): The sample to validate.
+
+    Returns:
+        bool: True if the sample is valid, False otherwise.
+    """
     try:
         from .entity import Sample
         Sample(**sample)
@@ -18,7 +27,13 @@ def validate_sample(sample: Dict) -> bool:
     
 def load_jsonl(file_path: str) -> List[Dict]:
     """
-    Load a JSONL file and return a list of dictionaries.
+    Load a JSONL file, validate each line, and return a list of valid dictionaries.
+
+    Args:
+        file_path (str): The path to the JSONL file.
+
+    Returns:
+        List[Dict]: A list of valid samples.
     """
     data = []
     with open(file_path, 'r') as f:
@@ -32,6 +47,16 @@ def load_jsonl(file_path: str) -> List[Dict]:
 
 
 def download_dataset(path: str = None) -> List[Dict]:
+    """
+    Downloads a dataset from Hugging Face Hub or a local path.
+
+    Args:
+        path (str, optional): The path or name of the dataset on Hugging Face Hub. 
+                              If None, defaults to "maifoundations/MCHA". Defaults to None.
+
+    Returns:
+        List[Dict]: The downloaded dataset as a list of dictionaries.
+    """
     if path is None:
         dataset = load_dataset("maifoundations/MCHA", split="train")
     else:
@@ -42,7 +67,18 @@ def download_dataset(path: str = None) -> List[Dict]:
 def save_results(output_path: str, 
                  data: List[Dict], 
                  model_type: str,
-                 metrics: Dict = None):
+                 metrics: Dict = None) -> None:
+    """
+    Saves the model's prediction results and metrics to files.
+
+    Results are saved in a JSONL file, and metrics are saved in a separate log file.
+
+    Args:
+        output_path (str): The base directory to save the output files.
+        data (List[Dict]): A list of prediction results to save.
+        model_type (str): The name of the model, used for creating a subdirectory.
+        metrics (Dict, optional): A dictionary of metrics to save. Defaults to None.
+    """
     output_dir = os.path.join(output_path, model_type)
     if not os.path.exists(output_dir):
         os.makedirs(output_dir)
@@ -60,6 +96,14 @@ def save_results(output_path: str,
     
 
 def generate_noise_image() -> Image:
+    """
+    Generates a random noise image.
+
+    The image is a 256x256 grayscale image with random pixel values.
+
+    Returns:
+        Image: A PIL Image object representing the noise image.
+    """
     noise_array = np.random.randint(0, 256, (256, 256), dtype=np.uint8)
     img = Image.fromarray(noise_array, mode='L')
     return img

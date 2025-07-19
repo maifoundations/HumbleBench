@@ -71,6 +71,10 @@ print(metrics)
 
 ## 🧩 Advanced Usage: Command-Line Interface
 
+<details><summary>⚠️WARNING⚠️</summary>
+If you wanna use our implemented models, please make sure you install all the requirements of respective model.
+</details>
+
 MCHA provides a unified CLI for seamless integration with any implementation of our model interface.
 
 ### 1. Clone the Repository
