@@ -6,7 +6,8 @@ if version.parse(transformers.__version__) >= version.parse("4.51"):
     from qwen_vl_utils import process_vision_info
     from vllm import LLM, SamplingParams
     from transformers import AutoProcessor
-
+    from typing import List, Dict
+    
     @register_model("Visionary-R1")
     class Visionary_R1(MultiModalModelInterface):
         def __init__(self, model_name_or_path, **kwargs):
@@ -32,11 +33,11 @@ if version.parse(transformers.__version__) >= version.parse("4.51"):
                 When giving the final answer, please respond with only the letter of the correct choice (A, B, C, D, or E). Do not include the option text.
             '''
 
-        def infer(self, messages: list) -> list:
-            # messages: list of dicts with keys 'image' (path or data) and 'question' (str)
+        def infer(self, batch: List[Dict]) -> List[Dict]:
+            # batch: list of dicts with keys 'image' (path or data) and 'question' (str)
             # 构建批次输入
             inputs = []
-            for msg in messages:
+            for msg in batch:
                 chat = [
                     {"role": "system", "content": [{"type": "text", "text": self.cot_prompt}]},
                     {"role": "user", "content": [
@@ -67,7 +68,7 @@ if version.parse(transformers.__version__) >= version.parse("4.51"):
             outputs = self.llm.generate(inputs, sampling_params=sampling_params)
 
             results = []
-            for msg, out in zip(messages, outputs):
+            for msg, out in zip(batch, outputs):
                 text = out.outputs[0].text.strip()
                 if "<answer>" in text:
                     text = text.split("<answer>")[-1].replace("</answer>", "").strip()

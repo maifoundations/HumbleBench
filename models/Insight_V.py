@@ -150,10 +150,10 @@ class Insight_V(nn.Module):
         self.model._tokenizer.padding_side = "left"
         self.model._tokenizer.pad_token = self.model._tokenizer.bos_token
     
-    def infer(self, messages: List[Dict]) -> List[str]:
+    def infer(self, batch: List[Dict]) -> List[Dict]:
         images = []
         processed_messages = []
-        for msg in messages:
+        for msg in batch:
             images.append(Image.open(msg.get("image").get('path')))
             question = self.cot_prompt.format(question=msg.get("question"))
             conv = [{"from": "human", "value": question}, {"from": "gpt", "value": None}]

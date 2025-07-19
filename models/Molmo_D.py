@@ -27,10 +27,10 @@ class Molmo_D(MultiModalModelInterface):
         )
         self.processor.tokenizer.padding_side = "left"
 
-    def infer(self, messages: List[Dict]) -> List[str]:
+    def infer(self, batch: List[Dict]) -> List[Dict]:
         texts = []
         images = []
-        for msg in messages:
+        for msg in batch:
             images.append([Image.open(msg.get("image").get('path'))])
             texts.append(msg.get("question") + NOT_REASONING_POST_PROMPT)
         inputs = self.process_batch(texts, images)
@@ -55,7 +55,7 @@ class Molmo_D(MultiModalModelInterface):
         
         responses = []
         for idx, text in enumerate(generated_texts):
-            response = messages[idx].copy()
+            response = batch[idx].copy()
             response.update({
                 "prediction": text,
             })

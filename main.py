@@ -39,8 +39,8 @@ if __name__ == '__main__':
     # Perform inference
     print(f"[Model] Running model: {args.model} with config: {model_cfg}")
     all_outputs = []
-    for messages in tqdm(data):
-        outputs = model.infer(messages)
+    for batch in tqdm(data):
+        outputs = model.infer(batch)
         all_outputs += outputs
     # Save the results  
     metrics = evaluate(input_data=all_outputs, 

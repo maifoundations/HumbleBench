@@ -27,10 +27,10 @@ class Phi_4(MultiModalModelInterface):
         self.assistant_prompt = '<|assistant|>'
         self.prompt_suffix = '<|end|>'
 
-    def infer(self, messages: List[Dict]) -> List[str]:
+    def infer(self, batch: List[Dict]) -> List[Dict]:
         questions = []
         images = []
-        for msg in messages:
+        for msg in batch:
             image_path = msg.get("image").get('path')
             images.append(Image.open(image_path))
             question = f'{self.user_prompt}<|image_1|>{msg.get("question") + NOT_REASONING_POST_PROMPT}{self.prompt_suffix}{self.assistant_prompt}'
@@ -57,7 +57,7 @@ class Phi_4(MultiModalModelInterface):
         
         responses = []
         for idx, text in enumerate(output):
-            response = messages[idx].copy()
+            response = batch[idx].copy()
             response.update({
                 "prediction": text,
             })

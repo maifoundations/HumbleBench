@@ -14,9 +14,9 @@ class Pixtral(MultiModalModelInterface):
         self.model = LLM(model=model_name_or_path, tokenizer_mode="mistral", limit_mm_per_prompt={"image": 1}, max_model_len=32768)
         self.sampling_params = SamplingParams(max_tokens=512, temperature=0.7)
     
-    def infer(self, messages: List[Dict]) -> List[str]:
+    def infer(self, batch: List[Dict]) -> List[Dict]:
         processed_messages = []
-        for msg in messages:
+        for msg in batch:
             image_path = msg.get("image").get('path')
             question = msg.get("question")
             msg = [{
@@ -32,7 +32,7 @@ class Pixtral(MultiModalModelInterface):
         
         responses = []
         for idx, text in enumerate(outputs):
-            response = messages[idx].copy()
+            response = batch[idx].copy()
             response.update({
                 "prediction": text,
             })

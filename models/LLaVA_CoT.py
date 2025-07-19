@@ -22,10 +22,10 @@ if version.parse(transformers.__version__) >= version.parse("4.51"):
             self.processor = AutoProcessor.from_pretrained(model_name_or_path)
             self.processor.tokenizer.padding_side = "left"
 
-        def infer(self, messages: List[Dict]) -> List[str]:
+        def infer(self, batch: List[Dict]) -> List[Dict]:
             processed_messages = []
             images = []
-            for msg in messages:
+            for msg in batch:
                 image_path = msg.get("image").get('path')
                 images.append([Image.open(image_path)])
                 question = msg.get("question")
@@ -71,7 +71,7 @@ if version.parse(transformers.__version__) >= version.parse("4.51"):
             
             responses = []
             for idx, text in enumerate(output):
-                response = messages[idx].copy()
+                response = batch[idx].copy()
                 response.update({
                     "prediction": text,
                 })

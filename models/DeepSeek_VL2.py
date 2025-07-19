@@ -27,10 +27,10 @@ if version.parse(transformers.__version__) <= version.parse("4.38.2"):
             
             self.tokenizer.padding_side = "left"
 
-        def infer(self, messages: List[Dict]) -> List[str]:
+        def infer(self, batch: List[Dict]) -> List[Dict]:
             conversations = []
             
-            for msg in messages:
+            for msg in batch:
                 image_path = msg.get("image").get('path')
                 question = msg.get("question")
                 conversation = [
@@ -82,7 +82,7 @@ if version.parse(transformers.__version__) <= version.parse("4.38.2"):
             
             responses = []
             for idx, text in enumerate(answer):
-                response = messages[idx].copy()
+                response = batch[idx].copy()
                 response.update({
                     "prediction": text,
                 })

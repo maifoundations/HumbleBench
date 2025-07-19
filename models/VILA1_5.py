@@ -15,16 +15,16 @@ if version.parse(transformers.__version__) == version.parse("4.46.0"):
             self.device = kwargs.get("device", "cuda:0")
             self.model = load(model_name_or_path).to(self.device).eval()
 
-        def infer(self, messages: List[Dict]) -> List[str]:
-            assert len(messages) == 1, "VILA1.5 model only supports single message input. (too lazy to implement batch inference XD)"
-            image = Image.open(messages[0].get("image").get('path'))
-            question = messages[0].get("question") + NOT_REASONING_POST_PROMPT
+        def infer(self, batch: List[Dict]) -> List[Dict]:
+            assert len(batch) == 1, "VILA1.5 model only supports single message input. (too lazy to implement batch inference XD)"
+            image = Image.open(batch[0].get("image").get('path'))
+            question = batch[0].get("question") + NOT_REASONING_POST_PROMPT
             inputs = [image, question]
             output = [self.model.generate_content(inputs)]
             assert len(output) == 1, "VILA1.5 model only supports single message output. (too lazy to implement batch inference XD)"
             responses = []
             for idx, text in enumerate(output):
-                response = messages[idx].copy()
+                response = batch[idx].copy()
                 response.update({
                     "prediction": text,
                 })

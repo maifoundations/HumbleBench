@@ -22,11 +22,11 @@ class Ovis_2(MultiModalModelInterface):
         self.visual_tokenizer = self.model.get_visual_tokenizer()
         self.cot_prompt = "\nProvide a step-by-step solution to the problem, and conclude with 'the answer is' followed by the final solution. When giving the final answer, please respond with only the letter of the correct choice (A, B, C, D, or E). Do not include the option text."
 
-    def infer(self, messages: List[Dict]) -> List[str]:
+    def infer(self, batch: List[Dict]) -> List[Dict]:
         images = []
         questions = []
         max_partition = 9
-        for msg in messages:
+        for msg in batch:
             image_path = msg.get("image").get('path')
             images.append([Image.open(image_path)])
             question = f'<image>\n{msg.get("question")}' + self.cot_prompt
@@ -78,7 +78,7 @@ class Ovis_2(MultiModalModelInterface):
         
         responses = []
         for idx, text in enumerate(output):
-            response = messages[idx].copy()
+            response = batch[idx].copy()
             response.update({
                 "prediction": text,
             })

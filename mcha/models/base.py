@@ -16,10 +16,10 @@ class MultiModalModelInterface(ABC):
         self.kwargs = kwargs
 
     @abstractmethod
-    def infer(self, messages: List[Dict]) -> List[str]:
+    def infer(self, batch: List[Dict]) -> List[Dict]:
         """
         Args:
-            messages: List of multimodal chat messages like:
+            batch: List of multimodal chat batch like:
                 [{ 'role': 'user', 'content': [{type: 'image', image: ...}, {type: 'text', text: ...}]}]
         Returns:
             output_text: List of generated response(s)

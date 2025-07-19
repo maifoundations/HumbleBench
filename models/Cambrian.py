@@ -25,10 +25,10 @@ class Cambrian(MultiModalModelInterface):
         self.model.config.tokenizer_padding_side = self.tokenizer.padding_side = "left"
         self.conv_mode = "llama_3"
 
-    def infer(self, messages: List[Dict]) -> List[str]:
+    def infer(self, batch: List[Dict]) -> List[str]:
         questions = []
         images = []
-        for msg in messages:
+        for msg in batch:
             image_path = msg.get("image").get('path')
             images.append(Image.open(image_path).convert("RGB"))
             question = msg.get("question") + "\n Please answer the question with one word."
@@ -78,7 +78,7 @@ class Cambrian(MultiModalModelInterface):
 
         responses = []
         for idx, text in enumerate(outputs):
-            response = messages[idx].copy()
+            response = batch[idx].copy()
             response.update({
                 "prediction": text,
             })

@@ -19,9 +19,9 @@ if version.parse(transformers.__version__) >= version.parse("4.51"):
                 torch_dtype=torch.bfloat16
             )
 
-        def infer(self, messages: List[Dict]) -> List[str]:
+        def infer(self, batch: List[Dict]) -> List[Dict]:
             processed_messages = []
-            for msg in messages:
+            for msg in batch:
                 image_path = msg.get("image").get('path')
                 question = msg.get("question")
                 msg = [
@@ -45,7 +45,7 @@ if version.parse(transformers.__version__) >= version.parse("4.51"):
 
             responses = []
             for idx, text in enumerate(output):
-                response = messages[idx].copy()
+                response = batch[idx].copy()
                 response.update({
                     "prediction": text,
                 })

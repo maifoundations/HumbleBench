@@ -1,14 +1,19 @@
-# MCHA: Multiple-Choices Hallucination Assessments
+# **MCHA: Multiple-Choice Hallucination Assessments**
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-blue.svg)|[![arXiv](https://img.shields.io/badge/arXiv-2405.12345-b31b1b.svg)](TODO)|[![PyPI](https://img.shields.io/pypi/v/mcha.svg)](https://pypi.org/project/mcha/)|[![HuggingFace](https://img.shields.io/badge/HuggingFace-MCHA-yellow.svg)](https://huggingface.co/datasets/maifoundations/MCHA)
 
-**MCHA** is a benchmark for evaluating **hallucinations** in Multimodal Large Language Models (MLLMs), covering **objects**, **attributes**, and **relations** via a principled multiple-choice format. Every question includes a **"None of the Above (NOTA)"** option, enabling more accurate hallucination analysis.
+> A large‑scale benchmark for diagnosing and measuring visual hallucinations in vision–language models.
 
----
+**Overview**
+Vision–language models often generate text that looks fluent but doesn’t faithfully reflect the image—so‑called *hallucinations*. Traditional “forced‑choice” evaluations mask a model’s true tendency to invent unsupported details and fail to cover diverse error types. By breaking free from forced‑choice paradigms, MCHA offers the most incisive assessment to date of whether vision–language models truly “see” what they describe.
+
+------
+
+[TOC]
 
 ## 📦 Installation
 
-Install via pip:
+Install the latest release from PyPI:
 
 ```bash
 pip install mcha
@@ -16,67 +21,147 @@ pip install mcha
 
 ------
 
-## 🚀 Quick Usage (Python API)
+## 🚀 Quickstart (Python API)
 
-This is the quickest way to test your model. You only need to write the inference loop.
+The following snippet demonstrates a minimal example to evaluate your model on MCHA.
 
 ```python
 from mcha import download_dataset, evaluate
 from mcha.utils.entity import DataLoader
 
+# Download the MCHA dataset
 dataset = download_dataset()
+
+# Prepare data loader (batch_size=16, no-noise images)
 data = DataLoader(dataset=dataset, batch_size=16, use_noise_image=False)
 
-
+# Run inference
+results = []
 for batch in data:
-    # NOTE: Use your model's inference method here
-    # NOTE: The return resuls should be a list of dictionaries, 
-    #       whose keys is the same as the batch input with an 
-    #       additional 'prediction' key (str).
-    inference_results = []
-    pass
+    # Replace the next line with your model's inference method
+    predictions = your_model.infer(batch)
+    # Expect predictions to be a list of dicts matching batch keys, plus 'prediction'
+    results.extend(predictions)
 
-metrics = evaluate(input_data=inference_results,model_name_or_path='Your model name', use_noise_image=False)
+# Compute evaluation metrics
+metrics = evaluate(
+    input_data=results,
+    model_name_or_path='YourModel',
+    use_noise_image=False
+)
+print(metrics)
+```
+
+If you prefer to reproduce the published results, load one of our provided JSONL files (at `results/common` or `results/noise_image`):
+
+```python
+from mcha.utils.io import load_jsonl
+
+path = 'results/common/Model_Name/Model_Name.jsonl'
+data = load_jsonl(path)
+metrics = evaluate(
+    input_data=data,
+    model_name_or_path='Model_Name',
+    use_noise_image=False
+)
+print(metrics)
 ```
 
 ------
 
-## 🧩 Advanced Usage: CLI with Standard Interface
+## 🧩 Advanced Usage: Command-Line Interface
 
-If you implement our standard model interface, you can run everything from shell.
+MCHA provides a unified CLI for seamless integration with any implementation of our model interface.
 
-### Step 1: Implement Your Model Interface
+### 1. Clone the Repository
 
-You need to subclass `BaseModel` and implement a `infer` method:
+```bash
+git clone git@github.com:maifoundations/MCHA.git
+cd MCHA
+```
+
+### 2. Implement the Model Interface
+
+Create a subclass of `MultiModalModelInterface` and define the `infer` method:
 
 ```python
 # my_model.py
+from mcha.models.base import register_model, MultiModalModelInterface
 
-from mcha.models.base import BaseModel
+@register_model("YourModel")
+class YourModel(MultiModalModelInterface):
+    def __init__(self, model_name_or_path, **kwargs):
+        super().__init__(model_name_or_path, **kwargs)
+        # Load your model and processor here
+        # Example:
+        # self.model = ...
+        # self.processor = ...
 
-class MyModel(BaseModel):
-    def __init__(self, model_path=None):
-        # load your model here
-        pass
-
-    def infer()
+    def infer(self, batch: List[Dict]) -> List[Dict]:
+        """
+        Args:
+            batch: List of dicts with keys:
+                - label: one of 'A', 'B', 'C', 'D', 'E'
+                - question: str
+                - type: 'Object'/'Attribute'/'Relation'/...
+                - file_name: path to image file
+                - question_id: unique identifier
+        Returns:
+            List of dicts with an added 'prediction' key (str).
+        """
+        # Your inference code here
+        return predictions
 ```
 
-### Step 2: Register Your Model (Optional)
+### 3. Configure Your Model
 
-If your model class is in the search path, no registration is needed. Otherwise, pass the file path with `--model-code`.
+Edit `configs/models.yaml` to register your model and specify its weights:
 
-------
+```yaml
+models:
+  YourModel:
+    params:
+      model_name_or_path: "/path/to/your/checkpoint"
+```
 
-### Step 3: Run from Command Line
+### 4. Run Evaluation from the Shell
+
+```bash
+#!/bin/bash
+export CUDA_VISIBLE_DEVICES=0,1,2,3
+
+python main.py \
+    --model "YourModel" \
+    --config configs/models.yaml \
+    --batch_size 16 \
+    --log_dir results/common \
+    [--use-noise]
+```
+
+- `--model`: Name registered via `@register_model`
+- `--config`: Path to your `models.yaml`
+- `--batch_size`: Inference batch size
+- `--log_dir`: Directory to save logs and results
+- `--use-noise`: Optional flag to assess hallucinations without visual inputs
+
+### 5. Contribute to MCHA!
+
+🙇🏾🙇🏾🙇🏾
+
+We have implemented many popular models in the `models` directory, along with corresponding shell scripts (including support for noise-image experiments) in the `shell` directory. If you’d like to add your own model to MCHA, feel free to open a Pull Request — we’ll review and merge it as soon as possible.
 
 ------
 
 ## 📁 Citation
 
+Please cite MCHA in your work:
+
 ```bibtex
-@article{
-    
+@article{yourcitation2025,
+  title={xxx},
+  author={xxx},
+  journal={arXiv preprint arXiv:YYYY.NNNNN},
+  year={2025}
 }
 ```
 
@@ -84,4 +169,4 @@ If your model class is in the search path, no registration is needed. Otherwise,
 
 ## 📮 Contact
 
-For bug reports or feature requests, please open an [issue](https://github.com/yourusername/MCHA/issues) or email us at [your@email.com](mailto:bingkuitong@gmail.com).
+For bug reports or feature requests, please open an [issue](https://github.com/maifoundations/MCHA/issues) or email us at [bingkuitong@gmail.com](mailto:bingkuitong@gmail.com).

@@ -29,11 +29,11 @@ if version.parse(transformers.__version__) >= version.parse("4.51"):
             self.tokenizer.padding_side = "left"
             self.generation_config = dict(max_new_tokens=1024, do_sample=True)
 
-        def infer(self, messages: List[Dict]) -> List[str]:
+        def infer(self, batch: List[Dict]) -> List[Dict]:
             pixel_values = []
             num_patches_list = []
             questions = []
-            for msg in messages:
+            for msg in batch:
                 image_path = msg.get("image").get('path')
                 question = msg.get("question") + NOT_REASONING_POST_PROMPT
                 
@@ -53,7 +53,7 @@ if version.parse(transformers.__version__) >= version.parse("4.51"):
 
             responses = []
             for idx, text in enumerate(output):
-                response = messages[idx].copy()
+                response = batch[idx].copy()
                 response.update({
                     "prediction": text,
                 })

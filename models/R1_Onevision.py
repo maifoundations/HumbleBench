@@ -21,9 +21,9 @@ if version.parse(transformers.__version__) >= version.parse("4.51"):
             self.processor.tokenizer.padding_side = "left"
             self.cot_prompt = "Hint: Please answer the question and provide the final answer at the end. Question: {question} \n When giving the final answer, please respond with only the letter of the correct choice (A, B, C, D, or E). Do not include the option text. "
 
-        def infer(self, messages: List[Dict]) -> List[str]:
+        def infer(self, batch: List[Dict]) -> List[Dict]:
             processed_messages = []
-            for msg in messages:
+            for msg in batch:
                 image_path = msg.get("image").get('path')
                 question = msg.get("question")
                 msg = [{
@@ -70,7 +70,7 @@ if version.parse(transformers.__version__) >= version.parse("4.51"):
                 
             responses = []
             for idx, text in enumerate(output):
-                response = messages[idx].copy()
+                response = batch[idx].copy()
                 response.update({
                     "prediction": text,
                 })
