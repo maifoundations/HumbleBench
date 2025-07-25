@@ -29,14 +29,14 @@ markers = ['o', 's', '^', 'D', 'v', 'p', '*', 'X', 'H', 'P', '+', 'x', 'd', '<',
 
 
 # --- 绘图 ---
-fig, ax = plt.subplots(figsize=(17, 7), dpi=300)
+fig, ax = plt.subplots(figsize=(12, 7), dpi=300)
 
 # 逐个点绘制并添加 label，用于图例；每个点使用不同的 marker
 for x, y, model, m in zip(x_values, y_values, models, markers):
     ax.scatter(
         x, y,
         s=70,
-        alpha=0.8,
+        alpha=1,
         edgecolors='k',
         c='#1f77b4',
         marker=m,
@@ -51,7 +51,7 @@ for x, y in zip(x_values, y_values):
         y - (max(y_values) - min(y_values)) * 0.015,
         f"({x:.2f}, {y:.2f})",
         fontproperties=prop,
-        fontsize=16,
+        fontsize=12,
         ha='center',
         va='top',
         zorder=6
@@ -69,7 +69,7 @@ ax.set_ylim(y_min - y_pad, y_max + y_pad)
 ax.set_title(
     'Model Performance (w/o Noise) vs. Faithfulness (w/ Noise)',
     fontproperties=prop,
-    fontsize=22,
+    fontsize=24,
     fontweight='bold'
 )
 ax.set_xlabel(
@@ -92,14 +92,29 @@ for label in ax.get_xticklabels() + ax.get_yticklabels():
 ax.grid(True, which='both', linestyle='--', linewidth=0.5, zorder=0)
 
 # 加图例（放在左下角，根据需求可调整 loc、ncol）
+# ax.legend(
+#     prop=prop,
+#     fontsize=26,
+#     markerscale=1,     # 图例中点放大两倍
+#     loc='lower left',
+#     ncol=2,              # 这里改成两列
+#     columnspacing=1.0,   # 列间距，可根据需要调整
+#     framealpha=1
+# )
+# 在加载完 prop 之后，构造一个加粗且更大的 FontProperties
+bold_prop = fm.FontProperties(fname=font_path, size=12, weight='bold')
+
+# 加图例（两列，字体更大加粗）
 ax.legend(
-    prop=prop,
-    fontsize=24,
-    markerscale=1.2,     # 图例中点放大两倍
+    prop=bold_prop,      # 用加粗大号字体
+    markerscale=1.3,     # 图例中点放大
     loc='lower left',
-    ncol=1,
+    ncol=2,              # 两列显示
+    columnspacing=0.5,   # 列间距
     framealpha=1
 )
+
+
 
 plt.tight_layout()
 plt.savefig("./stat/figures/e_proportion.pdf", bbox_inches='tight', pad_inches=0.05)

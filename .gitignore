@@ -56,7 +56,7 @@ TODO.md
 
 # pypi distribution
 *.egg-info
-dist*
+dist/
 
 # Hugging Face Hub upload
 test/
