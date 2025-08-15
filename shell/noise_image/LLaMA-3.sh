@@ -2,7 +2,7 @@
 
 export CUDA_VISIBLE_DEVICES=4
 
-/home/bingkui/miniconda3/envs/qwenvl25/bin/python\
+/mnt/data2/bingkui/miniconda3/envs/qwenvl25/bin/python\
     main.py \
     --model "LLaMA-3" \
     --config configs/models.yaml \

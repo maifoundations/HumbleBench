@@ -2,7 +2,7 @@
 
 export CUDA_VISIBLE_DEVICES=5
 
-/home/bingkui/miniconda3/envs/qwenvl25/bin/python\
+/mnt/data2/bingkui/miniconda3/envs/qwenvl25/bin/python\
     main.py \
     --model "Phi-4" \
     --config configs/models.yaml \

@@ -2,7 +2,7 @@
 
 export CUDA_VISIBLE_DEVICES=2
 
-/home/bingkui/miniconda3/envs/deepseekvl/bin/python\
+/mnt/data2/bingkui/miniconda3/envs/deepseekvl/bin/python\
     main.py \
     --model "DeepSeek-VL2" \
     --config configs/models.yaml \

@@ -1,4 +1,4 @@
-# **MCHA: Multiple-Choice Hallucination Assessments**
+# **STH: Stress Testing Hallucination in Large Vision-Language Models**
 
 ![License](https://img.shields.io/badge/license-MIT-blue.svg) [![arXiv](https://img.shields.io/badge/arXiv-2405.12345-b31b1b.svg)](TODO) [![PyPI](https://img.shields.io/pypi/v/mcha.svg)](https://pypi.org/project/mcha/) [![HuggingFace](https://img.shields.io/badge/HuggingFace-MCHA-yellow.svg)](https://huggingface.co/datasets/maifoundations/MCHA)
 

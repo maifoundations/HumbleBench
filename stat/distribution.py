@@ -10,8 +10,8 @@ font_prop = font_manager.FontProperties(fname=font_path)
 # --- Data Preparation ---
 answer_labels = ['A', 'B', 'C', 'D', 'E (NOTA)']
 answer_percentages = [17.53, 20.16, 27.07, 20.67, 14.57]
-question_labels = ['Relation', 'Attribute', 'Object']
-question_counts = [7528, 8079, 7224]
+question_labels = ['Object', 'Relation', 'Attribute']
+question_counts = [7224, 7528, 8079]
 total_questions = sum(question_counts)
 question_percentages = [(count / total_questions) * 100 for count in question_counts]
 

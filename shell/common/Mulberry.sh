@@ -2,7 +2,7 @@
 
 export CUDA_VISIBLE_DEVICES=1
 
-/home/bingkui/miniconda3/envs/mulberry/bin/python\
+/mnt/data2/bingkui/miniconda3/envs/mulberry/bin/python\
     main.py \
     --model "Mulberry" \
     --config configs/models.yaml \
