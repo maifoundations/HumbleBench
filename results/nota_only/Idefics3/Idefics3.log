@@ -1,0 +1,20 @@
+{
+    "Accuracy": {
+        "Relation_accuracy": 18.73007438894793,
+        "Attribute_accuracy": 30.87015719767298,
+        "Object_accuracy": 26.439645625692137,
+        "Overall_accuracy": 25.46537602382725,
+        "E_accuracy": 0.0
+    },
+    "Proportions": {
+        "A_proportion": 23.99369278612413,
+        "B_proportion": 18.645701020542248,
+        "C_proportion": 18.16389996057991,
+        "D_proportion": 13.73133020892646,
+        "E_proportion": 25.46537602382725,
+        "NA_proportion": 0.0
+    },
+    "model_name_or_path": "Idefics3",
+    "use_noise_image": false,
+    "nota_only": true
+}

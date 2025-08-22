@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export CUDA_VISIBLE_DEVICES=0
+export CUDA_VISIBLE_DEVICES=4
 
 /mnt/data2/bingkui/miniconda3/envs/qwenvl25/bin/python\
     main.py \

@@ -1,6 +1,7 @@
 #!/bin/bash
 
-export CUDA_VISIBLE_DEVICES=1
+export CUDA_VISIBLE_DEVICES=0
+
 
 /mnt/data2/bingkui/miniconda3/envs/deepseekvl/bin/python\
     main.py \

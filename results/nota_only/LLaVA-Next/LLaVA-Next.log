@@ -1,0 +1,20 @@
+{
+    "Accuracy": {
+        "Relation_accuracy": 10.613708820403826,
+        "Attribute_accuracy": 15.336056442629037,
+        "Object_accuracy": 14.534883720930234,
+        "Overall_accuracy": 13.525469756033463,
+        "E_accuracy": 0.0
+    },
+    "Proportions": {
+        "A_proportion": 30.445446979983355,
+        "B_proportion": 26.47715824974815,
+        "C_proportion": 16.80171696377732,
+        "D_proportion": 12.750208050457712,
+        "E_proportion": 13.525469756033463,
+        "NA_proportion": 0.0
+    },
+    "model_name_or_path": "LLaVA-Next",
+    "use_noise_image": false,
+    "nota_only": false
+}

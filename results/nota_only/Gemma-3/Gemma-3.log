@@ -1,0 +1,20 @@
+{
+    "Accuracy": {
+        "Relation_accuracy": 9.391604675876728,
+        "Attribute_accuracy": 26.03044931303379,
+        "Object_accuracy": 13.635105204872646,
+        "Overall_accuracy": 16.62213656870045,
+        "E_accuracy": 16.62213656870045
+    },
+    "Proportions": {
+        "A_proportion": 23.14835092637204,
+        "B_proportion": 27.738601024922254,
+        "C_proportion": 21.356926985239365,
+        "D_proportion": 11.133984494765889,
+        "E_proportion": 16.62213656870045,
+        "NA_proportion": 0.0
+    },
+    "model_name_or_path": "Gemma-3",
+    "use_noise_image": false,
+    "nota_only": false
+}

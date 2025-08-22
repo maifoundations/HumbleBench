@@ -1,0 +1,20 @@
+{
+    "Accuracy": {
+        "Relation_accuracy": 8.355472901168968,
+        "Attribute_accuracy": 20.670875108305484,
+        "Object_accuracy": 8.527131782945736,
+        "Overall_accuracy": 12.767728089001796,
+        "E_accuracy": 12.741448031185667
+    },
+    "Proportions": {
+        "A_proportion": 25.903376987429372,
+        "B_proportion": 28.41750251850554,
+        "C_proportion": 18.444220577285268,
+        "D_proportion": 14.467171827778023,
+        "E_proportion": 12.767728089001796,
+        "NA_proportion": 0.0
+    },
+    "model_name_or_path": "VILA1.5",
+    "use_noise_image": false,
+    "nota_only": true
+}

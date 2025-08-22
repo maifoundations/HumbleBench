@@ -7,7 +7,11 @@ from mcha.utils.rand import set_global_seed
 from mcha.utils.metrics import evaluate
 from rich import print
 from tqdm import tqdm
+import sys
+import os
 
+env_name = os.path.basename(sys.prefix)
+print("Current env:", env_name)
 
 def parse_args():
     parser = argparse.ArgumentParser()
@@ -47,7 +51,8 @@ if __name__ == '__main__':
     # Save the results  
     metrics = evaluate(input_data=all_outputs, 
                        model_name_or_path=args.model, 
-                       use_noise_image=args.use_noise_image)
+                       use_noise_image=args.use_noise_image,
+                       nota_only=args.nota_only)
     save_results(output_path=args.log_dir, 
                  data=all_outputs, 
                  model_type=args.model,

@@ -1,5 +1,5 @@
 #!/bin/bash
-export CUDA_VISIBLE_DEVICES=3
+export CUDA_VISIBLE_DEVICES=4
 
 /mnt/data2/bingkui/miniconda3/envs/XCD/bin/python\
     main.py \

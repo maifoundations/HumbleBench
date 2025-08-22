@@ -1,7 +1,9 @@
-from packaging import version
-import transformers
+import os
+import sys
 
-if version.parse(transformers.__version__) <= version.parse("4.38.2"):
+env_name = os.path.basename(sys.prefix)
+
+if env_name == 'deepseekvl':
     from mcha.models.base import register_model, MultiModalModelInterface
     import torch
     from transformers import AutoModelForCausalLM

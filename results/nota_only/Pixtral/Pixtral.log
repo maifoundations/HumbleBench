@@ -1,0 +1,20 @@
+{
+    "Accuracy": {
+        "Relation_accuracy": 36.344314558979804,
+        "Attribute_accuracy": 45.35214754301275,
+        "Object_accuracy": 35.89424141749723,
+        "Overall_accuracy": 39.38942665673865,
+        "E_accuracy": 39.38942665673865
+    },
+    "Proportions": {
+        "A_proportion": 17.800359160790155,
+        "B_proportion": 18.733301213262667,
+        "C_proportion": 14.524111953046296,
+        "D_proportion": 9.487100871621918,
+        "E_proportion": 39.38942665673865,
+        "NA_proportion": 0.06570014454031799
+    },
+    "model_name_or_path": "Pixtral",
+    "use_noise_image": false,
+    "nota_only": false
+}
