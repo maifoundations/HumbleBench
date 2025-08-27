@@ -1,8 +1,10 @@
-from packaging import version
-import transformers
+import os
+import sys
+
+env_name = os.path.basename(sys.prefix)
 
 
-if version.parse(transformers.__version__) >= version.parse("4.51"):
+if env_name == 'qwenvl25':
     from mcha.models.base import register_model, MultiModalModelInterface
     from torchvision.transforms.functional import InterpolationMode
     from transformers import AutoModel, AutoTokenizer

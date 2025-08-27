@@ -1,10 +1,8 @@
 {
     'Accuracy': {
         'Relation_accuracy': 64.24017003188098,
-        'Attribute_accuracy': 72.28612984265503,
-        'Category_accuracy': 57.55813953488372,
-        'Location_accuracy': 88.2217090069284,
-        'Weather_accuracy': 83.13253012048193,
+        'Attribute_accuracy': 73.25164005446219,
+        'Object_accuracy': 57.55813953488372,
         'Overall_accuracy': 65.31470369234812,
         'E_accuracy': 0.03006614552014432
     },
@@ -22,10 +20,8 @@
 {
     'Accuracy': {
         'Relation_accuracy': 65.24973432518597,
-        'Attribute_accuracy': 73.29102208118472,
-        'Category_accuracy': 61.54485049833887,
-        'Location_accuracy': 93.0715935334873,
-        'Weather_accuracy': 77.10843373493977,
+        'Attribute_accuracy': 74.39039485084787,
+        'Object_accuracy': 61.54485049833887,
         'Overall_accuracy': 67.31198808637379,
         'E_accuracy': 0.0
     },
@@ -43,10 +39,8 @@
 {
     'Accuracy': {
         'Relation_accuracy': 56.947396386822525,
-        'Attribute_accuracy': 67.93600423112521,
-        'Category_accuracy': 58.111849390919154,
-        'Location_accuracy': 86.14318706697459,
-        'Weather_accuracy': 67.46987951807229,
+        'Attribute_accuracy': 68.90704295086026,
+        'Object_accuracy': 58.111849390919154,
         'Overall_accuracy': 61.54789540536989,
         'E_accuracy': 8.087793144918821
     },
@@ -64,10 +58,8 @@
 {
     'Accuracy': {
         'Relation_accuracy': 67.9596174282678,
-        'Attribute_accuracy': 73.06624355414519,
-        'Category_accuracy': 63.59357696566998,
-        'Location_accuracy': 89.83833718244803,
-        'Weather_accuracy': 79.51807228915662,
+        'Attribute_accuracy': 74.03143953459586,
+        'Object_accuracy': 63.59357696566998,
         'Overall_accuracy': 68.72673119880864,
         'E_accuracy': 20.41491280817799
     },
@@ -85,10 +77,8 @@
 {
     'Accuracy': {
         'Relation_accuracy': 61.60998937300744,
-        'Attribute_accuracy': 71.16223720745735,
-        'Category_accuracy': 61.03266888150609,
-        'Location_accuracy': 95.61200923787528,
-        'Weather_accuracy': 77.10843373493977,
+        'Attribute_accuracy': 72.53372942195816,
+        'Object_accuracy': 61.03266888150609,
         'Overall_accuracy': 65.29280364416802,
         'E_accuracy': 0.0
     },
@@ -106,10 +96,8 @@
 {
     'Accuracy': {
         'Relation_accuracy': 66.69766206163655,
-        'Attribute_accuracy': 74.6925823086077,
-        'Category_accuracy': 65.7530454042082,
-        'Location_accuracy': 94.91916859122402,
-        'Weather_accuracy': 84.33734939759037,
+        'Attribute_accuracy': 75.87572719395965,
+        'Object_accuracy': 65.7530454042082,
         'Overall_accuracy': 69.64653322237308,
         'E_accuracy': 34.03487672880337
     },
@@ -127,10 +115,8 @@
 {
     'Accuracy': {
         'Relation_accuracy': 65.0903294367694,
-        'Attribute_accuracy': 72.39190797302658,
-        'Category_accuracy': 60.85271317829457,
-        'Location_accuracy': 94.45727482678984,
-        'Weather_accuracy': 83.13253012048193,
+        'Attribute_accuracy': 73.6848619878698,
+        'Object_accuracy': 60.85271317829457,
         'Overall_accuracy': 66.79076693968726,
         'E_accuracy': 0.0
     },
@@ -148,10 +134,8 @@
 {
     'Accuracy': {
         'Relation_accuracy': 55.92454835281615,
-        'Attribute_accuracy': 65.04032791220415,
-        'Category_accuracy': 56.907530454042075,
-        'Location_accuracy': 87.29792147806005,
-        'Weather_accuracy': 78.3132530120482,
+        'Attribute_accuracy': 66.36960019804431,
+        'Object_accuracy': 56.907530454042075,
         'Overall_accuracy': 59.93167184967807,
         'E_accuracy': 16.92723992784125
     },
@@ -169,10 +153,8 @@
 {
     'Accuracy': {
         'Relation_accuracy': 65.78108395324124,
-        'Attribute_accuracy': 74.98347216712945,
-        'Category_accuracy': 61.91860465116279,
-        'Location_accuracy': 96.07390300230946,
-        'Weather_accuracy': 81.92771084337349,
+        'Attribute_accuracy': 76.18517143210794,
+        'Object_accuracy': 61.91860465116279,
         'Overall_accuracy': 68.24055012921029,
         'E_accuracy': 0.0
     },
@@ -190,10 +172,8 @@
 {
     'Accuracy': {
         'Relation_accuracy': 68.13230605738576,
-        'Attribute_accuracy': 74.8776940367579,
-        'Category_accuracy': 65.8499446290144,
-        'Location_accuracy': 94.91916859122402,
-        'Weather_accuracy': 79.51807228915662,
+        'Attribute_accuracy': 75.99950488921895,
+        'Object_accuracy': 65.8499446290144,
         'Overall_accuracy': 70.19403442687575,
         'E_accuracy': 19.57306073361395
     },
@@ -211,10 +191,8 @@
 {
     'Accuracy': {
         'Relation_accuracy': 64.34643995749202,
-        'Attribute_accuracy': 72.47124157080523,
-        'Category_accuracy': 63.17829457364341,
-        'Location_accuracy': 93.30254041570439,
-        'Weather_accuracy': 81.92771084337349,
+        'Attribute_accuracy': 73.6848619878698,
+        'Object_accuracy': 63.17829457364341,
         'Overall_accuracy': 67.28132801892164,
         'E_accuracy': 16.837041491280818
     },
@@ -232,10 +210,8 @@
 {
     'Accuracy': {
         'Relation_accuracy': 64.73166843783208,
-        'Attribute_accuracy': 72.77535369562344,
-        'Category_accuracy': 60.22978959025471,
-        'Location_accuracy': 96.53579676674366,
-        'Weather_accuracy': 79.51807228915662,
+        'Attribute_accuracy': 74.11808392127739,
+        'Object_accuracy': 60.22978959025471,
         'Overall_accuracy': 66.62870658315448,
         'E_accuracy': 38.63499699338544
     },
@@ -253,10 +229,8 @@
 {
     'Accuracy': {
         'Relation_accuracy': 56.38947927736451,
-        'Attribute_accuracy': 68.61033981224381,
-        'Category_accuracy': 50.70598006644518,
-        'Location_accuracy': 96.30484988452656,
-        'Weather_accuracy': 78.3132530120482,
+        'Attribute_accuracy': 70.19433098155712,
+        'Object_accuracy': 50.70598006644518,
         'Overall_accuracy': 59.47615084753186,
         'E_accuracy': 20.14431749849669
     },
@@ -274,10 +248,8 @@
 {
     'Accuracy': {
         'Relation_accuracy': 65.1567481402763,
-        'Attribute_accuracy': 72.10101811450483,
-        'Category_accuracy': 61.434108527131784,
-        'Location_accuracy': 94.45727482678984,
-        'Weather_accuracy': 79.51807228915662,
+        'Attribute_accuracy': 73.3754177497215,
+        'Object_accuracy': 61.434108527131784,
         'Overall_accuracy': 66.88712715167973,
         'E_accuracy': 35.86891160553217
     },
@@ -295,10 +267,8 @@
 {
     'Accuracy': {
         'Relation_accuracy': 53.17481402763018,
-        'Attribute_accuracy': 61.285204284014284,
-        'Category_accuracy': 49.390919158361015,
-        'Location_accuracy': 96.53579676674366,
-        'Weather_accuracy': 74.69879518072288,
+        'Attribute_accuracy': 63.312291125139254,
+        'Object_accuracy': 49.390919158361015,
         'Overall_accuracy': 55.56480224256494,
         'E_accuracy': 65.3337342152736
     },
@@ -316,10 +286,8 @@
 {
     'Accuracy': {
         'Relation_accuracy': 70.43039319872476,
-        'Attribute_accuracy': 76.75525585085283,
-        'Category_accuracy': 67.77408637873754,
-        'Location_accuracy': 96.30484988452656,
-        'Weather_accuracy': 77.10843373493977,
+        'Attribute_accuracy': 77.80665924000495,
+        'Object_accuracy': 67.77408637873754,
         'Overall_accuracy': 72.20007884017346,
         'E_accuracy': 32.411304870715576
     },
@@ -337,10 +305,8 @@
 {
     'Accuracy': {
         'Relation_accuracy': 62.473432518597235,
-        'Attribute_accuracy': 71.0829036096787,
-        'Category_accuracy': 51.993355481727576,
-        'Location_accuracy': 94.68822170900692,
-        'Weather_accuracy': 73.49397590361446,
+        'Attribute_accuracy': 72.37281841812106,
+        'Object_accuracy': 51.993355481727576,
         'Overall_accuracy': 62.66041785291928,
         'E_accuracy': 13.108839446782921
     },
@@ -358,10 +324,8 @@
 {
     'Accuracy': {
         'Relation_accuracy': 60.98565356004251,
-        'Attribute_accuracy': 68.1740050244612,
-        'Category_accuracy': 58.236434108527135,
-        'Location_accuracy': 73.21016166281755,
-        'Weather_accuracy': 73.49397590361446,
+        'Attribute_accuracy': 68.49857655650452,
+        'Object_accuracy': 58.236434108527135,
         'Overall_accuracy': 62.77429810345583,
         'E_accuracy': 0.7215874924834637
     },
@@ -379,10 +343,8 @@
 {
     'Accuracy': {
         'Relation_accuracy': 71.25398512221042,
-        'Attribute_accuracy': 78.19648287716514,
-        'Category_accuracy': 69.296788482835,
-        'Location_accuracy': 96.30484988452656,
-        'Weather_accuracy': 85.54216867469879,
+        'Attribute_accuracy': 79.242480505013,
+        'Object_accuracy': 69.296788482835,
         'Overall_accuracy': 73.46152161534756,
         'E_accuracy': 0.06013229104028864
     },
@@ -400,10 +362,8 @@
 {
     'Accuracy': {
         'Relation_accuracy': 45.00531349628055,
-        'Attribute_accuracy': 38.56935078672484,
-        'Category_accuracy': 33.33333333333333,
-        'Location_accuracy': 68.36027713625866,
-        'Weather_accuracy': 26.506024096385545,
+        'Attribute_accuracy': 40.04208441638817,
+        'Object_accuracy': 33.33333333333333,
         'Overall_accuracy': 39.55586702290745,
         'E_accuracy': 2.3451593505712567
     },
@@ -421,10 +381,8 @@
 {
     'Accuracy': {
         'Relation_accuracy': 39.519128586609995,
-        'Attribute_accuracy': 34.89356075631363,
-        'Category_accuracy': 32.55813953488372,
-        'Location_accuracy': 48.49884526558891,
-        'Weather_accuracy': 30.120481927710845,
+        'Attribute_accuracy': 35.57370961752692,
+        'Object_accuracy': 32.55813953488372,
         'Overall_accuracy': 35.920459025009855,
         'E_accuracy': 0.0
     },
@@ -442,10 +400,8 @@
 {
     'Accuracy': {
         'Relation_accuracy': 18.690223166843783,
-        'Attribute_accuracy': 20.91762528097316,
-        'Category_accuracy': 23.57419712070875,
-        'Location_accuracy': 23.325635103926096,
-        'Weather_accuracy': 14.457831325301203,
+        'Attribute_accuracy': 20.98031934645377,
+        'Object_accuracy': 23.57419712070875,
         'Overall_accuracy': 21.045946301081862,
         'E_accuracy': 78.23211064341551
     },
@@ -463,10 +419,8 @@
 {
     'Accuracy': {
         'Relation_accuracy': 24.46865037194474,
-        'Attribute_accuracy': 30.51699061219093,
-        'Category_accuracy': 23.864894795127352,
-        'Location_accuracy': 31.639722863741337,
-        'Weather_accuracy': 14.457831325301203,
+        'Attribute_accuracy': 30.412179725213516,
+        'Object_accuracy': 23.864894795127352,
         'Overall_accuracy': 26.38079803775568,
         'E_accuracy': 70.65544197233915
     },
@@ -484,10 +438,8 @@
 {
     'Accuracy': {
         'Relation_accuracy': 23.29968119022317,
-        'Attribute_accuracy': 28.057649081052492,
-        'Category_accuracy': 22.99280177187154,
-        'Location_accuracy': 19.630484988452658,
-        'Weather_accuracy': 18.072289156626507,
+        'Attribute_accuracy': 27.503403886619633,
+        'Object_accuracy': 22.99280177187154,
         'Overall_accuracy': 24.6901143182515,
         'E_accuracy': 0.0
     },
@@ -505,10 +457,8 @@
 {
     'Accuracy': {
         'Relation_accuracy': 29.277364505844844,
-        'Attribute_accuracy': 28.2427608092027,
-        'Category_accuracy': 26.328903654485046,
-        'Location_accuracy': 16.628175519630485,
-        'Weather_accuracy': 13.253012048192772,
+        'Attribute_accuracy': 27.466270578041836,
+        'Object_accuracy': 26.328903654485046,
         'Overall_accuracy': 27.703560947834085,
         'E_accuracy': 63.83042693926638
     },
@@ -526,10 +476,8 @@
 {
     'Accuracy': {
         'Relation_accuracy': 27.430924548352813,
-        'Attribute_accuracy': 30.583101943673146,
-        'Category_accuracy': 23.352713178294575,
-        'Location_accuracy': 18.706697459584294,
-        'Weather_accuracy': 10.843373493975903,
+        'Attribute_accuracy': 29.74378017081322,
+        'Object_accuracy': 23.352713178294575,
         'Overall_accuracy': 26.958959309710483,
         'E_accuracy': 0.0
     },
@@ -547,10 +495,8 @@
 {
     'Accuracy': {
         'Relation_accuracy': 29.011689691817217,
-        'Attribute_accuracy': 27.608092026973424,
-        'Category_accuracy': 23.961794019933556,
-        'Location_accuracy': 31.177829099307157,
-        'Weather_accuracy': 15.66265060240964,
+        'Attribute_accuracy': 27.67669265998267,
+        'Object_accuracy': 23.961794019933556,
         'Overall_accuracy': 26.941439271166395,
         'E_accuracy': 57.69693325315694
     },
@@ -568,10 +514,8 @@
 {
     'Accuracy': {
         'Relation_accuracy': 33.38204038257173,
-        'Attribute_accuracy': 30.371545682930055,
-        'Category_accuracy': 24.363233665559246,
-        'Location_accuracy': 37.41339491916859,
-        'Weather_accuracy': 14.457831325301203,
+        'Attribute_accuracy': 30.585468498576557,
+        'Object_accuracy': 24.363233665559246,
         'Overall_accuracy': 29.538784985326966,
         'E_accuracy': 0.0
     },
@@ -589,10 +533,8 @@
 {
     'Accuracy': {
         'Relation_accuracy': 36.83581296493092,
-        'Attribute_accuracy': 35.382784609282034,
-        'Category_accuracy': 30.398671096345513,
-        'Location_accuracy': 43.187066974595844,
-        'Weather_accuracy': 24.096385542168676,
+        'Attribute_accuracy': 35.68510954326031,
+        'Object_accuracy': 30.398671096345513,
         'Overall_accuracy': 34.39183566203845,
         'E_accuracy': 48.1659651232712
     },
@@ -610,10 +552,8 @@
 {
     'Accuracy': {
         'Relation_accuracy': 43.57066950053135,
-        'Attribute_accuracy': 35.96456432632553,
-        'Category_accuracy': 36.337209302325576,
-        'Location_accuracy': 36.489607390300236,
-        'Weather_accuracy': 20.481927710843372,
+        'Attribute_accuracy': 35.833642777571484,
+        'Object_accuracy': 36.337209302325576,
         'Overall_accuracy': 38.54408479698655,
         'E_accuracy': 40.679494888755265
     },
@@ -631,10 +571,8 @@
 {
     'Accuracy': {
         'Relation_accuracy': 28.812433581296492,
-        'Attribute_accuracy': 27.88575961919873,
-        'Category_accuracy': 22.4390919158361,
-        'Location_accuracy': 73.21016166281755,
-        'Weather_accuracy': 10.843373493975903,
+        'Attribute_accuracy': 30.139868795643025,
+        'Object_accuracy': 22.4390919158361,
         'Overall_accuracy': 27.265559984231963,
         'E_accuracy': 79.13409500901984
     },
@@ -652,10 +590,8 @@
 {
     'Accuracy': {
         'Relation_accuracy': 18.570669500531352,
-        'Attribute_accuracy': 24.20996958878752,
-        'Category_accuracy': 21.622369878183832,
-        'Location_accuracy': 28.17551963048499,
-        'Weather_accuracy': 14.457831325301203,
+        'Attribute_accuracy': 24.322317118455256,
+        'Object_accuracy': 21.622369878183832,
         'Overall_accuracy': 21.571547457404407,
         'E_accuracy': 84.57606734816596
     },
@@ -673,10 +609,8 @@
 {
     'Accuracy': {
         'Relation_accuracy': 11.410733262486715,
-        'Attribute_accuracy': 21.24818193838424,
-        'Category_accuracy': 18.646179401993354,
-        'Location_accuracy': 20.785219399538107,
-        'Weather_accuracy': 19.27710843373494,
+        'Attribute_accuracy': 21.203119197920532,
+        'Object_accuracy': 18.646179401993354,
         'Overall_accuracy': 17.16525776356708,
         'E_accuracy': 82.68190018039687
     },
@@ -694,10 +628,8 @@
 {
     'Accuracy': {
         'Relation_accuracy': 22.02444208289054,
-        'Attribute_accuracy': 26.960200978447705,
-        'Category_accuracy': 21.124031007751938,
-        'Location_accuracy': 20.092378752886837,
-        'Weather_accuracy': 19.27710843373494,
+        'Attribute_accuracy': 26.513182324545113,
+        'Object_accuracy': 21.124031007751938,
         'Overall_accuracy': 23.327931321448908,
         'E_accuracy': 89.80757666867108
     },
@@ -715,10 +647,8 @@
 {
     'Accuracy': {
         'Relation_accuracy': 11.224760892667375,
-        'Attribute_accuracy': 20.653179955044294,
-        'Category_accuracy': 21.08250276854928,
-        'Location_accuracy': 13.394919168591224,
-        'Weather_accuracy': 15.66265060240964,
+        'Attribute_accuracy': 20.21289763584602,
+        'Object_accuracy': 21.08250276854928,
         'Overall_accuracy': 17.524418553720817,
         'E_accuracy': 92.8141912206855
     },
@@ -736,10 +666,8 @@
 {
     'Accuracy': {
         'Relation_accuracy': 48.59192348565356,
-        'Attribute_accuracy': 40.48657939970911,
-        'Category_accuracy': 32.115171650055366,
-        'Location_accuracy': 38.106235565819865,
-        'Weather_accuracy': 69.87951807228916,
+        'Attribute_accuracy': 40.66097289268474,
+        'Object_accuracy': 32.115171650055366,
         'Overall_accuracy': 40.57202925846437,
         'E_accuracy': 23.60192423331329
     },
@@ -757,10 +685,8 @@
 {
     'Accuracy': {
         'Relation_accuracy': 30.127523910733263,
-        'Attribute_accuracy': 25.29419542509586,
-        'Category_accuracy': 16.95736434108527,
-        'Location_accuracy': 36.72055427251732,
-        'Weather_accuracy': 40.963855421686745,
+        'Attribute_accuracy': 26.067582621611585,
+        'Object_accuracy': 16.95736434108527,
         'Overall_accuracy': 24.523673952082696,
         'E_accuracy': 1.0523150932050511
     },
@@ -778,10 +704,8 @@
 {
     'Accuracy': {
         'Relation_accuracy': 21.944739638682254,
-        'Attribute_accuracy': 23.852968398783553,
-        'Category_accuracy': 22.425249169435215,
-        'Location_accuracy': 32.10161662817552,
-        'Weather_accuracy': 13.253012048192772,
+        'Attribute_accuracy': 24.18616165367001,
+        'Object_accuracy': 22.425249169435215,
         'Overall_accuracy': 22.889930357846787,
         'E_accuracy': 0.03006614552014432
     },

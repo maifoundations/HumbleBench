@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 from matplotlib import font_manager
 
 # --- 1. 设置字体为 Times New Roman ---
+# 注意：要使 'bold' 生效，字体文件需要支持粗体样式。
 font_path = '/home/bingkui/.fonts/times.ttf'
 if os.path.exists(font_path):
     font_prop = font_manager.FontProperties(fname=font_path)
@@ -25,11 +26,13 @@ data = {
     ],
     'E Acc (%)': [
         65.33, 38.63, 35.87, 34.03, 32.41, 20.41, 20.14, 19.57,
-        16.93, 16.84, 13.11, 8.09, 0.72, 0.06, 0.03, 0.00, 0.00, 0.00, 0.00, 
+        16.93, 16.84, 13.11, 8.09, 0.72, 0.06, 0.03, 0.00, 0.00, 0.00, 0.00,
     ]
 }
 df = pd.DataFrame(data)
-df.sort_values(by='E Acc (%)', ascending=False)
+# 按原始顺序绘制，所以不需要排序
+# df = df.sort_values(by='E Acc (%)', ascending=False)
+
 
 # --- 设置绘图主题 ---
 sns.set_theme(style="whitegrid")
@@ -67,12 +70,16 @@ ax.set_xlabel(
     fontproperties=font_prop,
     fontweight='bold'
 )
+
+# --- 设置 Y 轴刻度标签（Model 名称）为粗体 ---
 ax.tick_params(axis='y', labelsize=26)
 for label in ax.get_yticklabels():
     label.set_fontproperties(font_prop)
     label.set_fontsize(26)
+    # 关键代码：将字体权重设置为 'bold'
     label.set_fontweight('bold')
 
+# --- 设置 X 轴刻度标签为粗体 ---
 ax.tick_params(axis='x', labelsize=26)
 for label in ax.get_xticklabels():
     label.set_fontproperties(font_prop)
@@ -106,7 +113,7 @@ ax.axvline(
 for spine in ax.spines.values():
     spine.set_edgecolor('black')
     spine.set_linewidth(1.5)
-    
+
 
 # --- 添加图例（右下角，加粗） ---
 legend = ax.legend(

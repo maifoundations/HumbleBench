@@ -2,7 +2,7 @@
 
 export CUDA_VISIBLE_DEVICES=4
 
-/home/bingkui/miniconda3/envs/vila/bin/python\
+/mnt/data2/bingkui/miniconda3/envs/vila/bin/python\
     main.py \
     --model "VILA1.5" \
     --config configs/models.yaml \

@@ -1,0 +1,20 @@
+{
+    "Accuracy": {
+        "Relation_accuracy": 22.52922422954304,
+        "Attribute_accuracy": 39.98019556875851,
+        "Object_accuracy": 23.117386489479514,
+        "Overall_accuracy": 28.89054355919583,
+        "E_accuracy": 28.89054355919583
+    },
+    "Proportions": {
+        "A_proportion": 17.103937628662784,
+        "B_proportion": 24.47111383645044,
+        "C_proportion": 14.992772984100567,
+        "D_proportion": 14.541631991590382,
+        "E_proportion": 28.89054355919583,
+        "NA_proportion": 0.0
+    },
+    "model_name_or_path": "Qwen2.5-VL",
+    "use_noise_image": false,
+    "nota_only": false
+}

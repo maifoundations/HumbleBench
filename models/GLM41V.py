@@ -1,8 +1,9 @@
-from packaging import version
-import transformers
+import os
+import sys
 
+env_name = os.path.basename(sys.prefix)
 
-if version.parse(transformers.__version__) == version.parse("4.54.0.dev0"):
+if env_name == "glmv":
     from mcha.models.base import register_model, MultiModalModelInterface
     from PIL import Image
     from transformers import AutoProcessor, Glm4vForConditionalGeneration

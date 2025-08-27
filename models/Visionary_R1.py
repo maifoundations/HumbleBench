@@ -1,7 +1,9 @@
-from packaging import version
-import transformers
+import os
+import sys
 
-if version.parse(transformers.__version__) >= version.parse("4.51"):
+env_name = os.path.basename(sys.prefix)
+
+if env_name == 'qwenvl25':
     from mcha.models.base import register_model, MultiModalModelInterface
     from qwen_vl_utils import process_vision_info
     from vllm import LLM, SamplingParams

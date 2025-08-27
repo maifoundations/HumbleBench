@@ -1,7 +1,9 @@
-from packaging import version
-import transformers
+import os
+import sys
 
-if version.parse(transformers.__version__) >= version.parse("4.45"):
+env_name = os.path.basename(sys.prefix)
+
+if env_name == 'mulberry':
     from mcha.models.base import register_model, MultiModalModelInterface
     from PIL import Image
     from transformers import Qwen2VLForConditionalGeneration, Qwen2VLProcessor
@@ -66,7 +68,7 @@ if version.parse(transformers.__version__) >= version.parse("4.45"):
                     },
                 ]
                 processed_messages.append(conv)
-                images.append(Image.open(msg.get("image")))
+                images.append(Image.open(msg.get("image").get('path')))
                 
             texts = [
                     self.processor.apply_chat_template(processed_msg, tokenize=False, add_generation_prompt=True)

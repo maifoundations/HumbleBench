@@ -20,7 +20,7 @@ def extract_options_from_question(question_str):
 
 # 假设你已经加载好 data
 from mcha import download_dataset
-data = download_dataset()
+data = download_dataset("/mnt/data2/bingkui/MCHA_experiments/dataset")
 
 # 基本统计
 num_questions = len(data)
@@ -43,12 +43,12 @@ for item in data:
 
     # 问题长度
     question_text = question.split("\n")[0].strip()
-    question_lengths.append(len(question_text))
+    question_lengths.append(len(question_text.split()))
 
     # 选项长度（按单个选项平均）
     options = extract_options_from_question(item["question"])
     if options:
-        avg_opt_len = np.mean([len(opt) for opt in options])
+        avg_opt_len = np.mean([len(opt.split()) for opt in options])
         option_lengths.append(avg_opt_len)
 
 
@@ -72,8 +72,8 @@ print("\n--- Label Distribution ---")
 for l, c in label_counter.items():
     print(f"{l}: {c} ({c / num_questions:.2%})")
 
-print(f"\nAverage question length: {np.mean(question_lengths):.2f} characters")
-print(f"Average option length: {np.mean(option_lengths):.2f} characters")
+print(f"\nAverage question length: {np.mean(question_lengths):.2f} words")
+print(f"Average option length: {np.mean(option_lengths):.2f} words")
 
 # 图像尺寸平均（如果启用）
 if image_sizes:

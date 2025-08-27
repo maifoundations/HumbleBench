@@ -122,7 +122,7 @@ def _save_checkpoint(self, model, trial, metrics=None):
 
     self.save_model(staging_output_dir, _internal_call=True)
 
-    if not self.args.save_only_model:
+    if not self.args.savnota_only_model:
         # Save optimizer and scheduler
         self._save_optimizer_and_scheduler(staging_output_dir)
         # Save RNG state

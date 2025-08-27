@@ -160,7 +160,10 @@ def compute_metrics(input: List[Dict]) -> Dict:
     return metrics
 
 
-def evaluate(input_data: Union[List[Dict], str], model_name_or_path: str = None, use_noise_image: bool = False) -> Dict:
+def evaluate(input_data: Union[List[Dict], str],
+             model_name_or_path: str = None,
+             use_noise_image: bool = False,
+             nota_only: bool = False) -> Dict:
     """
     Evaluates the model's performance on a given dataset.
 
@@ -186,5 +189,6 @@ def evaluate(input_data: Union[List[Dict], str], model_name_or_path: str = None,
     if model_name_or_path:
         result['model_name_or_path'] = model_name_or_path
     result['use_noise_image'] = use_noise_image
+    result['nota_only'] = nota_only
     print(result)
     return result

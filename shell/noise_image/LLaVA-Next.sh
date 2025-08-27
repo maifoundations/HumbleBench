@@ -2,7 +2,7 @@
 
 export CUDA_VISIBLE_DEVICES=1
 
-/home/bingkui/miniconda3/envs/qwenvl25/bin/python\
+/mnt/data2/bingkui/miniconda3/envs/qwenvl25/bin/python\
     main.py \
     --model "LLaVA-Next" \
     --config configs/models.yaml \

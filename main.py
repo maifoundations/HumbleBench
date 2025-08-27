@@ -7,13 +7,18 @@ from mcha.utils.rand import set_global_seed
 from mcha.utils.metrics import evaluate
 from rich import print
 from tqdm import tqdm
+import sys
+import os
 
+env_name = os.path.basename(sys.prefix)
+print("Current env:", env_name)
 
 def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('--config', default='configs/models.yaml')
     parser.add_argument('--model', help='model to run, override config')
     parser.add_argument('--use_noise_image', action='store_true', help='whether to replace image with noise')
+    parser.add_argument('--nota_only', action='store_true', help='whether to force the answer to be E')
     parser.add_argument('--batch_size', type=int, default=4, help='batch size for inference')
     parser.add_argument('--log_dir', default='logs', help='directory to save logs')
     return parser.parse_args()
@@ -31,7 +36,8 @@ if __name__ == '__main__':
     dataset = download_dataset(config.get('dataset', None))
     data = DataLoader(dataset=dataset,
                       batch_size=args.batch_size,
-                      use_noise_image=args.use_noise_image)
+                      use_noise_image=args.use_noise_image,
+                      nota_only=args.nota_only)
     # Load the model
     from models import *
     model_cfg = config.get('models').get(args.model)
@@ -45,7 +51,8 @@ if __name__ == '__main__':
     # Save the results  
     metrics = evaluate(input_data=all_outputs, 
                        model_name_or_path=args.model, 
-                       use_noise_image=args.use_noise_image)
+                       use_noise_image=args.use_noise_image,
+                       nota_only=args.nota_only)
     save_results(output_path=args.log_dir, 
                  data=all_outputs, 
                  model_type=args.model,

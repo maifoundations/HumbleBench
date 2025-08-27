@@ -1,7 +1,7 @@
 #!/bin/bash
 export CUDA_VISIBLE_DEVICES=4
 
-/home/bingkui/miniconda3/envs/XCD/bin/python\
+/mnt/data2/bingkui/miniconda3/envs/XCD/bin/python\
     main.py \
     --model "Cambrian" \
     --config configs/models.yaml \

@@ -1,0 +1,20 @@
+{
+    "Accuracy": {
+        "Relation_accuracy": 18.172157279489902,
+        "Attribute_accuracy": 23.69105087263275,
+        "Object_accuracy": 19.961240310077518,
+        "Overall_accuracy": 20.691165520564144,
+        "E_accuracy": 20.691165520564144
+    },
+    "Proportions": {
+        "A_proportion": 19.46914283211423,
+        "B_proportion": 24.488633874994527,
+        "C_proportion": 21.03718628180982,
+        "D_proportion": 14.313871490517279,
+        "E_proportion": 20.691165520564144,
+        "NA_proportion": 0.0
+    },
+    "model_name_or_path": "R1-VL",
+    "use_noise_image": false,
+    "nota_only": true
+}

@@ -17,18 +17,21 @@ class DataLoader:
         use_noise_image (bool, optional): If True, all images in the batches will be replaced
             by a single generated noise image. Defaults to False.
     """
-    def __init__(self, dataset: List[Dict], batch_size: int = 1, use_noise_image: bool = False):
+    def __init__(self, dataset: List[Dict], 
+                 batch_size: int = 1, 
+                 use_noise_image: bool = False,
+                 nota_only: bool = False):
         self.dataset = dataset
         self.batch_size = batch_size
         self.use_noise_image = use_noise_image
+        self.nota_only = nota_only
+        assert not (use_noise_image and nota_only), "args use_noise_image and nota_only cannot be true at the same time"
         if use_noise_image:
             from .io import generate_noise_image
             self.noise_image_path = os.path.join(".cache", "noise_image.png")
             os.makedirs(os.path.dirname(self.noise_image_path), exist_ok=True)
-            generate_noise_image().save(self.noise_image_path)
+            generate_noise_image().save(self.noise_image_path)       
             
-
-
     def __iter__(self) -> Iterator[List[Dict]]:
         self.idx = 0
         return self
@@ -40,6 +43,16 @@ class DataLoader:
         if self.use_noise_image:
             for sample in batch:
                 sample['image']['path'] = self.noise_image_path
+        if self.nota_only:
+            for sample in batch:
+                if sample['label'] != 'E':
+                    # remove the original correct option
+                    lines = sample['question'].strip().split('\n')
+                    answer_prefix_to_remove = sample['label'] + '.'
+                    filtered_lines = [lines[0]] + [line for line in lines[1:] if not line.strip().startswith(answer_prefix_to_remove)]
+                    sample['question'] = '\n'.join(filtered_lines)
+                    # modify the correct answer
+                    sample['label'] = 'E'
         self.idx += self.batch_size
         return batch
     
