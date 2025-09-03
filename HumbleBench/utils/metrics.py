@@ -177,6 +177,7 @@ def evaluate(input_data: Union[List[Dict], str],
                                             Defaults to None.
         use_noise_image (bool, optional): Flag indicating if noise images were used. 
                                           Defaults to False.
+        nota_only (bool, optional): Flag indicating if all answers will be modified to E.
 
     Returns:
         Dict: A dictionary containing the evaluation results.

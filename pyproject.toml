@@ -1,6 +1,6 @@
 [project]
 name = "HumbleBench"
-version = "1.0.1"
+version = "1.0.2"
 description = "A comprehensive benchmark for hallucinations in multimodal large language models."
 authors = [{ name="Bingkui Tong", email="bingkuitong@gmail.com" }]
 license = "MIT"
