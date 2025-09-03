@@ -4,12 +4,12 @@ import sys
 env_name = os.path.basename(sys.prefix)
 
 if env_name == "glmv":
-    from mcha.models.base import register_model, MultiModalModelInterface
+    from HumbleBench.models.base import register_model, MultiModalModelInterface
     from PIL import Image
     from transformers import AutoProcessor, Glm4vForConditionalGeneration
     import torch
     from typing import List, Dict
-    from mcha.utils.constant import NOT_REASONING_POST_PROMPT
+    from HumbleBench.utils.constant import NOT_REASONING_POST_PROMPT
 
     @register_model("GLM-4.1V")
     class GLM41V(MultiModalModelInterface):

@@ -5,11 +5,11 @@ env_name = os.path.basename(sys.prefix)
 
 
 if env_name == 'qwenvl25':
-    from mcha.models.base import register_model, MultiModalModelInterface
+    from HumbleBench.models.base import register_model, MultiModalModelInterface
     from transformers import pipeline
     from typing import List, Dict
     import torch
-    from mcha.utils.constant import NOT_REASONING_POST_PROMPT
+    from HumbleBench.utils.constant import NOT_REASONING_POST_PROMPT
 
     @register_model("Gemma-3")
     class Gemma_3(MultiModalModelInterface):

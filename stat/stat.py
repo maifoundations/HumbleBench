@@ -19,7 +19,7 @@ def extract_options_from_question(question_str):
 
 
 # 假设你已经加载好 data
-from mcha import download_dataset
+from HumbleBench import download_dataset
 data = download_dataset("/mnt/data2/bingkui/MCHA_experiments/dataset")
 
 # 基本统计

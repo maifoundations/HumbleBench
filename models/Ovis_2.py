@@ -4,7 +4,7 @@ import sys
 env_name = os.path.basename(sys.prefix)
 
 if env_name == 'qwenvl25':
-    from mcha.models.base import register_model, MultiModalModelInterface
+    from HumbleBench.models.base import register_model, MultiModalModelInterface
     from PIL import Image
     from transformers import AutoModelForCausalLM
     import torch

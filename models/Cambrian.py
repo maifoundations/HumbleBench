@@ -10,8 +10,8 @@ if env_name == 'XCD':
     import torch 
     from torch.nn.functional import pad
 
-    from mcha.models.base import MultiModalModelInterface, register_model
-    from mcha.utils.constant import NOT_REASONING_POST_PROMPT
+    from HumbleBench.models.base import MultiModalModelInterface, register_model
+    from HumbleBench.utils.constant import NOT_REASONING_POST_PROMPT
 
     from models.cambrian.constants import IMAGE_TOKEN_INDEX, DEFAULT_IMAGE_TOKEN, DEFAULT_IM_START_TOKEN, DEFAULT_IM_END_TOKEN
     from models.cambrian.conversation import conv_templates, SeparatorStyle

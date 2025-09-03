@@ -4,7 +4,7 @@ import sys
 env_name = os.path.basename(sys.prefix)
 
 if env_name == 'deepseekvl':
-    from mcha.models.base import register_model, MultiModalModelInterface
+    from HumbleBench.models.base import register_model, MultiModalModelInterface
     import torch
     from transformers import AutoModelForCausalLM
     from models.deepseek_vl2.models import DeepseekVLV2Processor
@@ -12,7 +12,7 @@ if env_name == 'deepseekvl':
     import torch
     from typing import List, Dict
     from torch.nn.utils.rnn import pad_sequence
-    from mcha.utils.constant import NOT_REASONING_POST_PROMPT
+    from HumbleBench.utils.constant import NOT_REASONING_POST_PROMPT
 
     @register_model("DeepSeek-VL2")
     class DeepSeek_VL2(MultiModalModelInterface):

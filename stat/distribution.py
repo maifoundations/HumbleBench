@@ -17,7 +17,11 @@ question_percentages = [(count / total_questions) * 100 for count in question_co
 
 # --- Plotting ---
 sns.set_theme(style="whitegrid")
-fig, axes = plt.subplots(1, 2, figsize=(12, 5), dpi=300)
+fig, axes = plt.subplots(1, 2, figsize=(12, 4.5), dpi=300)
+
+# --- 关键修改：增加子图间隔 ---
+plt.subplots_adjust(wspace=500)
+
 
 # --- Subplot (a): Answer Distribution ---
 ax1 = axes[0]
