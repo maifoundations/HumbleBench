@@ -33,6 +33,7 @@ if __name__ == '__main__':
     with open(args.config) as f:
         config = yaml.safe_load(f)
     # Load the dataset
+    # If you have already download the dataset, you can set it in the `configs/models.yaml`
     dataset = download_dataset(config.get('dataset', None))
     data = DataLoader(dataset=dataset,
                       batch_size=args.batch_size,

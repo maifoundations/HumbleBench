@@ -1,11 +1,11 @@
 [project]
 name = "HumbleBench"
-version = "1.0.0"
+version = "1.0.1"
 description = "A comprehensive benchmark for hallucinations in multimodal large language models."
 authors = [{ name="Bingkui Tong", email="bingkuitong@gmail.com" }]
 license = "MIT"
 readme = "README.md"
-requires-python = ">=3.7"
+requires-python = ">=3.9.0"
 
 dependencies = [
     "tqdm",

@@ -63,4 +63,5 @@ models:
 
 
 # dataset config
-dataset: "/mnt/data2/bingkui/MCHA_experiments/dataset"
+# Set your config here
+# dataset: "/mnt/data2/bingkui/MCHA_experiments/dataset"

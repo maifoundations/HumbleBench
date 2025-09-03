@@ -57,6 +57,7 @@ If you prefer to reproduce the published results, load one of our provided JSONL
 
 ```python
 from HumbleBench.utils.io import load_jsonl
+from HumbleBench import evaluate
 
 path = 'results/common/Model_Name/Model_Name.jsonl'
 data = load_jsonl(path)
@@ -73,10 +74,8 @@ print(metrics)
 
 ## 🧩 Advanced Usage: Command-Line Interface
 
-<details><summary>⚠️WARNING⚠️</summary>
-If you wanna use our implemented models, please make sure you install all the requirements of respective model **by yourself**.
-And we use Conda to manage the python environment, so maybe you need to modify the `env_name` to your env's name.
-</details>
+⚠️WARNING⚠️: If you wanna use our implemented models, please make sure you install all the requirements of respective model **by yourself**. And we use Conda to manage the python environment, so maybe you need to modify the `env_name` to your env's name.
+
 
 HumbleBench provides a unified CLI for seamless integration with any implementation of our model interface.
 
