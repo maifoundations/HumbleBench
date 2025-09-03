@@ -4,13 +4,13 @@ import sys
 env_name = os.path.basename(sys.prefix)
 
 if env_name == "molmo":
-    from mcha.models.base import register_model, MultiModalModelInterface
+    from HumbleBench.models.base import register_model, MultiModalModelInterface
     from transformers import AutoModelForCausalLM, AutoProcessor, GenerationConfig
     import torch
     from typing import List, Dict
     from PIL import Image, ImageOps
     import numpy as np
-    from mcha.utils.constant import NOT_REASONING_POST_PROMPT
+    from HumbleBench.utils.constant import NOT_REASONING_POST_PROMPT
 
     @register_model("Molmo-D")
     class Molmo_D(MultiModalModelInterface):

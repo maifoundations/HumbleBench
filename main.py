@@ -1,10 +1,10 @@
 # main.py
 import argparse, yaml
-from mcha.models.base import ModelFactory
-from mcha.utils.entity import DataLoader
-from mcha.utils.io import download_dataset, save_results
-from mcha.utils.rand import set_global_seed
-from mcha.utils.metrics import evaluate
+from HumbleBench.models.base import ModelFactory
+from HumbleBench.utils.entity import DataLoader
+from HumbleBench.utils.io import download_dataset, save_results
+from HumbleBench.utils.rand import set_global_seed
+from HumbleBench.utils.metrics import evaluate
 from rich import print
 from tqdm import tqdm
 import sys

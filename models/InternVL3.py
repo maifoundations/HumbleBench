@@ -5,14 +5,14 @@ env_name = os.path.basename(sys.prefix)
 
 
 if env_name == 'qwenvl25':
-    from mcha.models.base import register_model, MultiModalModelInterface
+    from HumbleBench.models.base import register_model, MultiModalModelInterface
     from torchvision.transforms.functional import InterpolationMode
     from transformers import AutoModel, AutoTokenizer
     import torch
     from typing import List, Dict
     from PIL import Image
     import torchvision.transforms as T
-    from mcha.utils.constant import IMAGENET_MEAN, IMAGENET_STD, NOT_REASONING_POST_PROMPT
+    from HumbleBench.utils.constant import IMAGENET_MEAN, IMAGENET_STD, NOT_REASONING_POST_PROMPT
 
     @register_model("InternVL3")
     class InternVL3(MultiModalModelInterface):

@@ -4,7 +4,7 @@ import sys
 env_name = os.path.basename(sys.prefix)
 
 if env_name == 'mulberry':
-    from mcha.models.base import register_model, MultiModalModelInterface
+    from HumbleBench.models.base import register_model, MultiModalModelInterface
     from PIL import Image
     from transformers import Qwen2VLForConditionalGeneration, Qwen2VLProcessor
     import torch

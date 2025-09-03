@@ -1,0 +1,438 @@
+
+
+===== Cambrian =====
+
+{
+    "Accuracy": {
+        "Relation_accuracy": 53.985122210414445,
+        "Attribute_accuracy": 64.77286792919917,
+        "Object_accuracy": 63.06755260243633,
+        "Overall_accuracy": 60.676273487801666,
+        "E_accuracy": 60.676273487801666
+    },
+    "Proportions": {
+        "A_proportion": 15.518374140423107,
+        "B_proportion": 11.261004774210503,
+        "C_proportion": 6.97735535018177,
+        "D_proportion": 5.566992247382944,
+        "E_proportion": 60.676273487801666,
+        "NA_proportion": 0.0
+    },
+    "model_name_or_path": "Cambrian",
+    "use_noise_image": false,
+    "nota_only": true
+}
+
+===== DeepSeek-VL2 =====
+
+{
+    "Accuracy": {
+        "Relation_accuracy": 11.105207226354942,
+        "Attribute_accuracy": 23.270206708751083,
+        "Object_accuracy": 11.157253599114064,
+        "Overall_accuracy": 15.426393938066663,
+        "E_accuracy": 10.73540361788796
+    },
+    "Proportions": {
+        "A_proportion": 41.93859226490299,
+        "B_proportion": 21.50146730322807,
+        "C_proportion": 11.904866190705619,
+        "D_proportion": 8.79943935876659,
+        "E_proportion": 15.426393938066663,
+        "NA_proportion": 0.42924094433007753
+    },
+    "model_name_or_path": "DeepSeek-VL2",
+    "use_noise_image": false,
+    "nota_only": false
+}
+
+===== GLM-4.1V =====
+
+{
+    "Accuracy": {
+        "Relation_accuracy": 45.64293304994686,
+        "Attribute_accuracy": 67.42171060774848,
+        "Object_accuracy": 50.91362126245848,
+        "Overall_accuracy": 55.017301038062286,
+        "E_accuracy": 0.06132013490429679
+    },
+    "Proportions": {
+        "A_proportion": 14.620472165038764,
+        "B_proportion": 12.320967106127634,
+        "C_proportion": 9.09290000438001,
+        "D_proportion": 7.200735841618852,
+        "E_proportion": 55.017301038062286,
+        "NA_proportion": 1.7476238447724586
+    },
+    "model_name_or_path": "GLM-4.1V",
+    "use_noise_image": false,
+    "nota_only": true
+}
+
+===== Gemma-3 =====
+
+{
+    "Accuracy": {
+        "Relation_accuracy": 9.391604675876728,
+        "Attribute_accuracy": 26.03044931303379,
+        "Object_accuracy": 13.635105204872646,
+        "Overall_accuracy": 16.62213656870045,
+        "E_accuracy": 16.62213656870045
+    },
+    "Proportions": {
+        "A_proportion": 23.14835092637204,
+        "B_proportion": 27.738601024922254,
+        "C_proportion": 21.356926985239365,
+        "D_proportion": 11.133984494765889,
+        "E_proportion": 16.62213656870045,
+        "NA_proportion": 0.0
+    },
+    "model_name_or_path": "Gemma-3",
+    "use_noise_image": false,
+    "nota_only": false
+}
+
+===== Idefics3 =====
+
+{
+    "Accuracy": {
+        "Relation_accuracy": 18.73007438894793,
+        "Attribute_accuracy": 30.87015719767298,
+        "Object_accuracy": 26.439645625692137,
+        "Overall_accuracy": 25.46537602382725,
+        "E_accuracy": 0.0
+    },
+    "Proportions": {
+        "A_proportion": 23.99369278612413,
+        "B_proportion": 18.645701020542248,
+        "C_proportion": 18.16389996057991,
+        "D_proportion": 13.73133020892646,
+        "E_proportion": 25.46537602382725,
+        "NA_proportion": 0.0
+    },
+    "model_name_or_path": "Idefics3",
+    "use_noise_image": false,
+    "nota_only": true
+}
+
+===== InternVL3 =====
+
+{
+    "Accuracy": {
+        "Relation_accuracy": 20.13815090329437,
+        "Attribute_accuracy": 37.405619507364776,
+        "Object_accuracy": 18.673864894795127,
+        "Overall_accuracy": 25.785116727256803,
+        "E_accuracy": 23.288511234724716
+    },
+    "Proportions": {
+        "A_proportion": 21.295606850335073,
+        "B_proportion": 23.15711094564408,
+        "C_proportion": 16.61337654942841,
+        "D_proportion": 13.135648898427576,
+        "E_proportion": 25.785116727256803,
+        "NA_proportion": 0.013140028908063596
+    },
+    "model_name_or_path": "InternVL3",
+    "use_noise_image": false,
+    "nota_only": false
+}
+
+===== LLaMA-3 =====
+
+{
+    "Accuracy": {
+        "Relation_accuracy": 4.92826780021254,
+        "Attribute_accuracy": 11.845525436316375,
+        "Object_accuracy": 9.786821705426355,
+        "Overall_accuracy": 8.91331960930314,
+        "E_accuracy": 0.07884017344838158
+    },
+    "Proportions": {
+        "A_proportion": 24.6068941351671,
+        "B_proportion": 25.793876746528845,
+        "C_proportion": 24.22583329683325,
+        "D_proportion": 16.460076212167667,
+        "E_proportion": 8.91331960930314,
+        "NA_proportion": 0.0
+    },
+    "model_name_or_path": "LLaMA-3",
+    "use_noise_image": false,
+    "nota_only": false
+}
+
+===== LLaVA-CoT =====
+
+{
+    "Accuracy": {
+        "Relation_accuracy": 30.00797024442083,
+        "Attribute_accuracy": 38.17304121797252,
+        "Object_accuracy": 39.64562569213732,
+        "Overall_accuracy": 35.946739082825985,
+        "E_accuracy": 0.0
+    },
+    "Proportions": {
+        "A_proportion": 16.587096491612282,
+        "B_proportion": 15.930095046209104,
+        "C_proportion": 15.702334545135999,
+        "D_proportion": 14.861372695019929,
+        "E_proportion": 35.946739082825985,
+        "NA_proportion": 0.9723621391967063
+    },
+    "model_name_or_path": "LLaVA-CoT",
+    "use_noise_image": false,
+    "nota_only": true
+}
+
+===== LLaVA-Next =====
+
+{
+    "Accuracy": {
+        "Relation_accuracy": 10.613708820403826,
+        "Attribute_accuracy": 15.336056442629037,
+        "Object_accuracy": 14.534883720930234,
+        "Overall_accuracy": 13.525469756033463,
+        "E_accuracy": 0.0
+    },
+    "Proportions": {
+        "A_proportion": 30.445446979983355,
+        "B_proportion": 26.47715824974815,
+        "C_proportion": 16.80171696377732,
+        "D_proportion": 12.750208050457712,
+        "E_proportion": 13.525469756033463,
+        "NA_proportion": 0.0
+    },
+    "model_name_or_path": "LLaVA-Next",
+    "use_noise_image": false,
+    "nota_only": false
+}
+
+===== Molmo-D =====
+
+{
+    "Accuracy": {
+        "Relation_accuracy": 10.812964930924549,
+        "Attribute_accuracy": 14.38296818913232,
+        "Object_accuracy": 11.24031007751938,
+        "Overall_accuracy": 12.211466865227104,
+        "E_accuracy": 0.0
+    },
+    "Proportions": {
+        "A_proportion": 20.581665279663618,
+        "B_proportion": 19.613683150102933,
+        "C_proportion": 13.122508869519514,
+        "D_proportion": 20.774385703648548,
+        "E_proportion": 12.211466865227104,
+        "NA_proportion": 13.69629013183829
+    },
+    "model_name_or_path": "Molmo-D",
+    "use_noise_image": false,
+    "nota_only": true
+}
+
+===== Mulberry =====
+
+{
+    "Accuracy": {
+        "Relation_accuracy": 16.312433581296492,
+        "Attribute_accuracy": 22.255229607624706,
+        "Object_accuracy": 17.04042081949059,
+        "Overall_accuracy": 18.645701020542248,
+        "E_accuracy": 17.296658052647714
+    },
+    "Proportions": {
+        "A_proportion": 22.592089702597345,
+        "B_proportion": 27.037799483158864,
+        "C_proportion": 11.83478603652928,
+        "D_proportion": 12.798388156453944,
+        "E_proportion": 18.645701020542248,
+        "NA_proportion": 7.091235600718322
+    },
+    "model_name_or_path": "Mulberry",
+    "use_noise_image": false,
+    "nota_only": true
+}
+
+===== Ovis-2 =====
+
+{
+    "Accuracy": {
+        "Relation_accuracy": 14.09404888416578,
+        "Attribute_accuracy": 23.3939844040104,
+        "Object_accuracy": 11.364894795127354,
+        "Overall_accuracy": 16.521396347071963,
+        "E_accuracy": 0.9592221102886427
+    },
+    "Proportions": {
+        "A_proportion": 27.856861285094826,
+        "B_proportion": 16.674696684332705,
+        "C_proportion": 14.037930883447943,
+        "D_proportion": 10.29740265428584,
+        "E_proportion": 16.521396347071963,
+        "NA_proportion": 14.61171214576672
+    },
+    "model_name_or_path": "Ovis-2",
+    "use_noise_image": false,
+    "nota_only": true
+}
+
+===== Phi-4 =====
+
+{
+    "Accuracy": {
+        "Relation_accuracy": 8.607863974495219,
+        "Attribute_accuracy": 19.284564921401163,
+        "Object_accuracy": 12.167774086378738,
+        "Overall_accuracy": 13.5123297271254,
+        "E_accuracy": 13.5123297271254
+    },
+    "Proportions": {
+        "A_proportion": 29.19276422408129,
+        "B_proportion": 25.684376505628315,
+        "C_proportion": 18.093819806403573,
+        "D_proportion": 13.51670973676142,
+        "E_proportion": 13.5123297271254,
+        "NA_proportion": 0.0
+    },
+    "model_name_or_path": "Phi-4",
+    "use_noise_image": false,
+    "nota_only": false
+}
+
+===== Pixtral =====
+
+{
+    "Accuracy": {
+        "Relation_accuracy": 36.344314558979804,
+        "Attribute_accuracy": 45.35214754301275,
+        "Object_accuracy": 35.89424141749723,
+        "Overall_accuracy": 39.38942665673865,
+        "E_accuracy": 39.38942665673865
+    },
+    "Proportions": {
+        "A_proportion": 17.800359160790155,
+        "B_proportion": 18.733301213262667,
+        "C_proportion": 14.524111953046296,
+        "D_proportion": 9.487100871621918,
+        "E_proportion": 39.38942665673865,
+        "NA_proportion": 0.06570014454031799
+    },
+    "model_name_or_path": "Pixtral",
+    "use_noise_image": false,
+    "nota_only": false
+}
+
+===== Qwen2.5-VL =====
+
+{
+    "Accuracy": {
+        "Relation_accuracy": 22.52922422954304,
+        "Attribute_accuracy": 39.98019556875851,
+        "Object_accuracy": 23.117386489479514,
+        "Overall_accuracy": 28.89054355919583,
+        "E_accuracy": 28.89054355919583
+    },
+    "Proportions": {
+        "A_proportion": 17.103937628662784,
+        "B_proportion": 24.47111383645044,
+        "C_proportion": 14.992772984100567,
+        "D_proportion": 14.541631991590382,
+        "E_proportion": 28.89054355919583,
+        "NA_proportion": 0.0
+    },
+    "model_name_or_path": "Qwen2.5-VL",
+    "use_noise_image": false,
+    "nota_only": false
+}
+
+===== R1-Onevision =====
+
+{
+    "Accuracy": {
+        "Relation_accuracy": 30.712008501594052,
+        "Attribute_accuracy": 45.30263646490902,
+        "Object_accuracy": 27.685492801771872,
+        "Overall_accuracy": 34.917436818361004,
+        "E_accuracy": 34.251675353685776
+    },
+    "Proportions": {
+        "A_proportion": 21.86500810301783,
+        "B_proportion": 16.24545574000263,
+        "C_proportion": 12.719547983005564,
+        "D_proportion": 12.137006701414743,
+        "E_proportion": 34.917436818361004,
+        "NA_proportion": 2.115544654198239
+    },
+    "model_name_or_path": "R1-Onevision",
+    "use_noise_image": false,
+    "nota_only": true
+}
+
+===== R1-VL =====
+
+{
+    "Accuracy": {
+        "Relation_accuracy": 18.172157279489902,
+        "Attribute_accuracy": 23.69105087263275,
+        "Object_accuracy": 19.961240310077518,
+        "Overall_accuracy": 20.691165520564144,
+        "E_accuracy": 20.691165520564144
+    },
+    "Proportions": {
+        "A_proportion": 19.46914283211423,
+        "B_proportion": 24.488633874994527,
+        "C_proportion": 21.03718628180982,
+        "D_proportion": 14.313871490517279,
+        "E_proportion": 20.691165520564144,
+        "NA_proportion": 0.0
+    },
+    "model_name_or_path": "R1-VL",
+    "use_noise_image": false,
+    "nota_only": true
+}
+
+===== VILA1.5 =====
+
+{
+    "Accuracy": {
+        "Relation_accuracy": 8.355472901168968,
+        "Attribute_accuracy": 20.670875108305484,
+        "Object_accuracy": 8.527131782945736,
+        "Overall_accuracy": 12.767728089001796,
+        "E_accuracy": 12.741448031185667
+    },
+    "Proportions": {
+        "A_proportion": 25.903376987429372,
+        "B_proportion": 28.41750251850554,
+        "C_proportion": 18.444220577285268,
+        "D_proportion": 14.467171827778023,
+        "E_proportion": 12.767728089001796,
+        "NA_proportion": 0.0
+    },
+    "model_name_or_path": "VILA1.5",
+    "use_noise_image": false,
+    "nota_only": true
+}
+
+===== Visionary-R1 =====
+
+{
+    "Accuracy": {
+        "Relation_accuracy": 33.156216790648244,
+        "Attribute_accuracy": 51.05829929446713,
+        "Object_accuracy": 31.22923588039867,
+        "Overall_accuracy": 38.88134553896019,
+        "E_accuracy": 38.87696552932417
+    },
+    "Proportions": {
+        "A_proportion": 17.936139459506812,
+        "B_proportion": 18.054399719679385,
+        "C_proportion": 13.705050151110331,
+        "D_proportion": 11.414305111471245,
+        "E_proportion": 38.88134553896019,
+        "NA_proportion": 0.008760019272042398
+    },
+    "model_name_or_path": "Visionary-R1",
+    "use_noise_image": false,
+    "nota_only": true
+}

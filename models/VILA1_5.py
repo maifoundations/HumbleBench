@@ -4,11 +4,11 @@ import sys
 env_name = os.path.basename(sys.prefix)
 
 if env_name == 'vila':
-    from mcha.models.base import register_model, MultiModalModelInterface
+    from HumbleBench.models.base import register_model, MultiModalModelInterface
     from PIL import Image
     from models.vila import load
     from typing import List, Dict
-    from mcha.utils.constant import NOT_REASONING_POST_PROMPT
+    from HumbleBench.utils.constant import NOT_REASONING_POST_PROMPT
 
     @register_model("VILA1.5")
     class VILA_15(MultiModalModelInterface):

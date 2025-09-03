@@ -52,13 +52,13 @@ def download_dataset(path: str = None) -> List[Dict]:
 
     Args:
         path (str, optional): The path or name of the dataset on Hugging Face Hub. 
-                              If None, defaults to "maifoundations/MCHA". Defaults to None.
+                              If None, defaults to "maifoundations/HumbleBench". Defaults to None.
 
     Returns:
         List[Dict]: The downloaded dataset as a list of dictionaries.
     """
     if path is None:
-        dataset = load_dataset("maifoundations/MCHA", split="train")
+        dataset = load_dataset("maifoundations/HumbleBench", split="train")
     else:
         dataset = load_dataset(path, split="train")
     return dataset.to_list()

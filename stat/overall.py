@@ -2,7 +2,7 @@ import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
-from mcha import evaluate
+from HumbleBench import evaluate
 import os
 
 

@@ -19,16 +19,19 @@ else:
 # --- 数据准备 ---
 data = {
     'Model': [
-        'Cambrian', 'Pixtral', 'R1-Onevision', 'Visionary-R1', 'Qwen2.5-VL',
-        'R1-VL', 'Gemma-3', 'InternVL3', 'Mulberry', 'Phi-4', 'VILA1.5',
-        'DeepSeek-VL2', 'Ovis-2', 'GLM-4.1V-Thinking', 'LLaMA-3.2', 'Molmo-D', 'LLaVA-CoT',
-        'LLaVA-Next', 'Idefics3'
+        'Cambrian', 'Pixtral', 'Visionary-R1', 'R1-Onevision', 'Qwen2.5-VL',
+        'InternVL3', 'R1-VL', 'Mulberry', 'Gemma-3', 'Phi-4',
+        'VILA1.5', 'DeepSeek-VL2', 'Ovis-2', 'LLaMA-3', 'GLM-4.1V',
+        'Molmo-D', 'LLaVA-CoT', 'LLaVA-Next', 'Idefics3'
     ],
     'E Acc (%)': [
-        65.33, 38.63, 35.87, 34.03, 32.41, 20.41, 20.14, 19.57,
-        16.93, 16.84, 13.11, 8.09, 0.72, 0.06, 0.03, 0.00, 0.00, 0.00, 0.00,
+        60.68, 39.39, 38.88, 34.25, 28.89,
+        23.29, 20.69, 17.30, 16.62, 13.51,
+        12.74, 10.74, 0.96, 0.08, 0.06,
+        0.00, 0.00, 0.00, 0.00
     ]
 }
+
 df = pd.DataFrame(data)
 # 按原始顺序绘制，所以不需要排序
 # df = df.sort_values(by='E Acc (%)', ascending=False)

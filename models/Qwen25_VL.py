@@ -2,12 +2,12 @@ from packaging import version
 import transformers
 
 if version.parse(transformers.__version__) >= version.parse("4.51"):
-    from mcha.models.base import register_model, MultiModalModelInterface
+    from HumbleBench.models.base import register_model, MultiModalModelInterface
     from transformers import Qwen2_5_VLForConditionalGeneration, AutoProcessor
     from qwen_vl_utils import process_vision_info
     import torch
     from typing import List, Dict
-    from mcha.utils.constant import NOT_REASONING_POST_PROMPT
+    from HumbleBench.utils.constant import NOT_REASONING_POST_PROMPT
 
     @register_model("Qwen2.5-VL")
     class Qwen2_5_VL_Model(MultiModalModelInterface):

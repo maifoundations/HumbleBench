@@ -22,7 +22,7 @@ if env_name == "insight_v":
     from models.insight_v.llava.mm_utils import get_model_name_from_path, process_images
     from models.insight_v.llava.constants import IMAGE_TOKEN_INDEX, IGNORE_INDEX
 
-    from mcha.models.base import register_model
+    from HumbleBench.models.base import register_model
     from typing import Optional, Union, List, Dict
     from PIL import Image
 

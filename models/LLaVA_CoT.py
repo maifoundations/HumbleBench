@@ -4,12 +4,12 @@ import sys
 env_name = os.path.basename(sys.prefix)
 
 if env_name == 'qwenvl25':
-    from mcha.models.base import register_model, MultiModalModelInterface
+    from HumbleBench.models.base import register_model, MultiModalModelInterface
     from PIL import Image
     from transformers import MllamaForConditionalGeneration, AutoProcessor
     import torch
     from typing import List, Dict
-    from mcha.utils.constant import NOT_REASONING_POST_PROMPT
+    from HumbleBench.utils.constant import NOT_REASONING_POST_PROMPT
 
     @register_model("LLaVA-CoT")
     class LLaMA_CoT(MultiModalModelInterface):
