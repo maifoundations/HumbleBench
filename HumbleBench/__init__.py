@@ -1,4 +1,4 @@
-__version__ = "1.0.0"
+__version__ = "1.0.2"
 
-from .utils.metrics import evaluate
-from .utils.io import download_dataset
+from .utils.metrics import *
+from .utils.io import *

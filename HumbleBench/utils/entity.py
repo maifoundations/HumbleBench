@@ -16,6 +16,7 @@ class DataLoader:
         batch_size (int, optional): The number of samples in each batch. Defaults to 1.
         use_noise_image (bool, optional): If True, all images in the batches will be replaced
             by a single generated noise image. Defaults to False.
+        nota_only (bool, optional): If True, all questions' answer will be modified to E. Defaults to False.
     """
     def __init__(self, dataset: List[Dict], 
                  batch_size: int = 1, 
