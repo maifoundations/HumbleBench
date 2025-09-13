@@ -165,10 +165,10 @@ We have implemented many popular models in the `models` directory, along with co
 Please cite HumbleBench in your work:
 
 ```bibtex
-@article{yourcitation2025,
-  title={xxx},
-  author={xxx},
-  journal={arXiv preprint arXiv:YYYY.NNNNN},
+@article{tong2025measuringepistemichumilitymultimodal,
+  title={Measuring Epistemic Humility in Multimodal Large Language Models},
+  author={Bingkui Tong and Jiaer Xia and Sifeng Shang and Kaiyang Zhou},
+  journal={arXiv preprint arXiv:2509.09658},
   year={2025}
 }
 ```
