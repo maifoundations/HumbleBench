@@ -158,7 +158,6 @@ python main.py \
 
 We have implemented many popular models in the `models` directory, along with corresponding shell scripts (including support for noise-image experiments) in the `shell` directory. If you’d like to add your own model to HumbleBench, feel free to open a Pull Request — we’ll review and merge it as soon as possible.
 
-<!-- ------
 
 ## 📁 Citation
 
@@ -173,7 +172,6 @@ Please cite HumbleBench in your work:
 }
 ```
 
------- -->
 
 ## 📮 Contact
 
