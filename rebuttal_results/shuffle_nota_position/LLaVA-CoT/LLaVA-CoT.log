@@ -1,0 +1,24 @@
+{
+    "Accuracy": {
+        "Relation_accuracy": 65.38257173219979,
+        "Attribute_accuracy": 74.05619507364773,
+        "Object_accuracy": 60.38205980066446,
+        "Overall_accuracy": 66.86960711313566,
+        "E_accuracy": 0.0
+    },
+    "Proportions": {
+        "A_proportion": 19.473522841750253,
+        "B_proportion": 18.939161666155666,
+        "C_proportion": 19.705663352459375,
+        "D_proportion": 21.37006701414743,
+        "E_proportion": 20.025404055888924,
+        "NA_proportion": 0.48618106959835317
+    },
+    "model_name_or_path": "LLaVA-CoT",
+    "evaluation_setting": "shuffle_nota_position",
+    "use_noise_image": false,
+    "nota_only": false,
+    "shuffle_nota_position": true,
+    "use_cautious_prompt": false,
+    "use_forced_grounding_prompt": false
+}

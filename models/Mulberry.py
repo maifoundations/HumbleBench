@@ -1,9 +1,9 @@
 import os
 import sys
+from pathlib import Path
+env_name = Path(sys.prefix).name
 
-env_name = os.path.basename(sys.prefix)
-
-if env_name == 'mulberry':
+if env_name == "env_1":
     from HumbleBench.models.base import register_model, MultiModalModelInterface
     from PIL import Image
     from transformers import Qwen2VLForConditionalGeneration, Qwen2VLProcessor

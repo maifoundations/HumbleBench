@@ -1,0 +1,24 @@
+{
+    "Accuracy": {
+        "Relation_accuracy": 65.4489904357067,
+        "Attribute_accuracy": 74.66270578041836,
+        "Object_accuracy": 64.39645625692137,
+        "Overall_accuracy": 68.37633042792694,
+        "E_accuracy": 66.2739965095986
+    },
+    "Proportions": {
+        "A_proportion": 19.710043362095398,
+        "B_proportion": 19.71880338136744,
+        "C_proportion": 20.04292409443301,
+        "D_proportion": 21.238666725066796,
+        "E_proportion": 19.2764224081293,
+        "NA_proportion": 0.013140028908063596
+    },
+    "model_name_or_path": "Visionary-R1",
+    "evaluation_setting": "shuffle_nota_position",
+    "use_noise_image": false,
+    "nota_only": false,
+    "shuffle_nota_position": true,
+    "use_cautious_prompt": false,
+    "use_forced_grounding_prompt": false
+}

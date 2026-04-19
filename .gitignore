@@ -16,6 +16,8 @@ __pycache__/
 .venv/
 env/
 venv/
+envs/
+dataset/
 
 # MacOS/Linux
 .DS_Store

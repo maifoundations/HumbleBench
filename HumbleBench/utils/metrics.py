@@ -1,4 +1,4 @@
-from .io import load_jsonl
+from .io import load_jsonl, build_setting_name
 from typing import List, Dict, Optional, Union
 from collections import defaultdict
 import re
@@ -163,7 +163,11 @@ def compute_metrics(input: List[Dict]) -> Dict:
 def evaluate(input_data: Union[List[Dict], str],
              model_name_or_path: str = None,
              use_noise_image: bool = False,
-             nota_only: bool = False) -> Dict:
+             nota_only: bool = False,
+             shuffle_nota_position: bool = False,
+             use_cautious_prompt: bool = False,
+             use_forced_grounding_prompt: bool = False,
+             evaluation_setting: str = None) -> Dict:
     """
     Evaluates the model's performance on a given dataset.
 
@@ -177,7 +181,12 @@ def evaluate(input_data: Union[List[Dict], str],
                                             Defaults to None.
         use_noise_image (bool, optional): Flag indicating if noise images were used. 
                                           Defaults to False.
-        nota_only (bool, optional): Flag indicating if all answers will be modified to E.
+        nota_only (bool, optional): Flag indicating if the NOTA-only setting was used.
+        shuffle_nota_position (bool, optional): Flag indicating if answer options were shuffled.
+        use_cautious_prompt (bool, optional): Flag indicating if the cautious prompt was used.
+        use_forced_grounding_prompt (bool, optional): Flag indicating if the forced-grounding
+                                                      prompt was used.
+        evaluation_setting (str, optional): Explicit evaluation setting name.
 
     Returns:
         Dict: A dictionary containing the evaluation results.
@@ -189,7 +198,19 @@ def evaluate(input_data: Union[List[Dict], str],
     result = compute_metrics(data)
     if model_name_or_path:
         result['model_name_or_path'] = model_name_or_path
+    if evaluation_setting is None:
+        evaluation_setting = build_setting_name(
+            use_noise_image=use_noise_image,
+            nota_only=nota_only,
+            shuffle_nota_position=shuffle_nota_position,
+            use_cautious_prompt=use_cautious_prompt,
+            use_forced_grounding_prompt=use_forced_grounding_prompt,
+        )
+    result['evaluation_setting'] = evaluation_setting
     result['use_noise_image'] = use_noise_image
     result['nota_only'] = nota_only
+    result['shuffle_nota_position'] = shuffle_nota_position
+    result['use_cautious_prompt'] = use_cautious_prompt
+    result['use_forced_grounding_prompt'] = use_forced_grounding_prompt
     print(result)
     return result

@@ -133,7 +133,12 @@ class Attention(nn.Module):
         self.proj_drop = nn.Dropout(proj_drop) if proj_drop > 0. else nn.Identity()
 
     def forward(self, x: torch.Tensor) -> torch.Tensor:
-        from xformers.ops import memory_efficient_attention
+        try:
+            from xformers.ops import memory_efficient_attention
+            USE_XFORMERS = True
+        except Exception:
+            USE_XFORMERS = False
+        # from xformers.ops import memory_efficient_attention
 
         B, N, C = x.shape
         qkv = self.qkv(x).reshape(B, N, 3, self.num_heads, self.head_dim)
@@ -145,7 +150,11 @@ class Attention(nn.Module):
                                               deterministic=self.deterministic)
             else:
                 q, k, v = qkv.unbind(2)
-                x = memory_efficient_attention(q, k, v, p=self.attn_drop.p if self.training else 0.)
+                # x = memory_efficient_attention(q, k, v, p=self.attn_drop.p if self.training else 0.)
+                if USE_XFORMERS:
+                    x = memory_efficient_attention(q, k, v)
+                else:
+                    x = torch.nn.functional.scaled_dot_product_attention(q, k, v)
             x = x.reshape(B, N, C)
             x = self.proj(x)
             x = self.proj_drop(x)

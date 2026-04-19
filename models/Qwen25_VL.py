@@ -1,7 +1,11 @@
 from packaging import version
 import transformers
+from pathlib import Path
 
-if version.parse(transformers.__version__) >= version.parse("4.51"):
+import sys
+from pathlib import Path
+env_name = Path(sys.prefix).name
+if env_name == "env_1":
     from HumbleBench.models.base import register_model, MultiModalModelInterface
     from transformers import Qwen2_5_VLForConditionalGeneration, AutoProcessor
     from qwen_vl_utils import process_vision_info

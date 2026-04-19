@@ -1,0 +1,24 @@
+{
+    "Accuracy": {
+        "Relation_accuracy": 65.94048884165781,
+        "Attribute_accuracy": 76.19754920163386,
+        "Object_accuracy": 60.92192691029901,
+        "Overall_accuracy": 67.98212956068504,
+        "E_accuracy": 0.0
+    },
+    "Proportions": {
+        "A_proportion": 19.53046296701853,
+        "B_proportion": 18.58876089527397,
+        "C_proportion": 18.982961762515878,
+        "D_proportion": 21.54526739958828,
+        "E_proportion": 21.352546975603346,
+        "NA_proportion": 0.0
+    },
+    "model_name_or_path": "Idefics3",
+    "evaluation_setting": "shuffle_nota_position",
+    "use_noise_image": false,
+    "nota_only": false,
+    "shuffle_nota_position": true,
+    "use_cautious_prompt": false,
+    "use_forced_grounding_prompt": false
+}

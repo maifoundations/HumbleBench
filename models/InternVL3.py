@@ -1,10 +1,9 @@
 import os
 import sys
+from pathlib import Path
+env_name = Path(sys.prefix).name
 
-env_name = os.path.basename(sys.prefix)
-
-
-if env_name == 'qwenvl25':
+if env_name == "env_2":
     from HumbleBench.models.base import register_model, MultiModalModelInterface
     from torchvision.transforms.functional import InterpolationMode
     from transformers import AutoModel, AutoTokenizer
@@ -22,7 +21,6 @@ if env_name == 'qwenvl25':
             self.model = AutoModel.from_pretrained(
                             model_name_or_path,
                             torch_dtype=torch.bfloat16,
-                            load_in_8bit=False,
                             low_cpu_mem_usage=True,
                             use_flash_attn=True,
                             trust_remote_code=True

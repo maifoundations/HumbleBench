@@ -1,10 +1,9 @@
 import os
 import sys
+from pathlib import Path
+env_name = Path(sys.prefix).name
 
-env_name = os.path.basename(sys.prefix)
-
-
-if env_name == 'qwenvl25':
+if env_name == "env_2":
     from HumbleBench.models.base import register_model, MultiModalModelInterface
     import torch
     from PIL import Image

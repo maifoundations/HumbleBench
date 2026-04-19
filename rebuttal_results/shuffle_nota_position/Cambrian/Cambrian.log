@@ -1,0 +1,24 @@
+{
+    "Accuracy": {
+        "Relation_accuracy": 52.48405951115834,
+        "Attribute_accuracy": 62.87906919173165,
+        "Object_accuracy": 53.737541528239205,
+        "Overall_accuracy": 56.55906442994174,
+        "E_accuracy": 51.61431064572426
+    },
+    "Proportions": {
+        "A_proportion": 20.56414524111953,
+        "B_proportion": 20.415224913494807,
+        "C_proportion": 21.14230651307433,
+        "D_proportion": 20.143664316061496,
+        "E_proportion": 17.734659016249836,
+        "NA_proportion": 0.0
+    },
+    "model_name_or_path": "Cambrian",
+    "evaluation_setting": "shuffle_nota_position",
+    "use_noise_image": false,
+    "nota_only": false,
+    "shuffle_nota_position": true,
+    "use_cautious_prompt": false,
+    "use_forced_grounding_prompt": false
+}

@@ -1,9 +1,9 @@
 import os
 import sys
+from pathlib import Path
+env_name = Path(sys.prefix).name
 
-env_name = os.path.basename(sys.prefix)
-
-if env_name == "glmv":
+if env_name == "env_1":
     from HumbleBench.models.base import register_model, MultiModalModelInterface
     from PIL import Image
     from transformers import AutoProcessor, Glm4vForConditionalGeneration
@@ -57,7 +57,7 @@ if env_name == "glmv":
             ).to(self.model.device)
 
             with torch.no_grad():
-                generated_ids = self.model.generate(**inputs, max_new_tokens=8192)
+                generated_ids = self.model.generate(**inputs, max_new_tokens=512)
 
             trimmed_ids = [
                 out_ids[len(in_ids):] for in_ids, out_ids in zip(inputs["input_ids"], generated_ids)

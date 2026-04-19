@@ -1,9 +1,9 @@
 import os
 import sys
+from pathlib import Path
+env_name = Path(sys.prefix).name
 
-env_name = os.path.basename(sys.prefix)
-
-if env_name == 'deepseekvl':
+if env_name == "env_3":
     from HumbleBench.models.base import register_model, MultiModalModelInterface
     import torch
     from transformers import AutoModelForCausalLM
@@ -14,6 +14,10 @@ if env_name == 'deepseekvl':
     from torch.nn.utils.rnn import pad_sequence
     from HumbleBench.utils.constant import NOT_REASONING_POST_PROMPT
 
+    import torch
+    torch.backends.cudnn.enabled = False
+    torch.backends.cudnn.benchmark = False
+    
     @register_model("DeepSeek-VL2")
     class DeepSeek_VL2(MultiModalModelInterface):
         def __init__(self, model_name_or_path, **kwargs):

@@ -1,9 +1,9 @@
 import os
 import sys
+from pathlib import Path
+env_name = Path(sys.prefix).name
 
-env_name = os.path.basename(sys.prefix)
-
-if env_name == "insight_v":
+if env_name == "env_2":
 
     import torch
 
@@ -186,16 +186,25 @@ if env_name == "insight_v":
                 gen_kwargs["num_beams"] = 1
             gen_kwargs["image_sizes"] = [image.size for image in images]
 
-            output_ids = self.model._model.generate(
-                input_ids,
-                attention_mask=attention_masks,
-                pad_token_id=pad_token_ids,
-                images=image_tensor,
-                image_sizes=gen_kwargs["image_sizes"],
-                do_sample=False,
-                max_new_tokens=gen_kwargs["max_new_tokens"],
-                use_cache=True,
-            )
+            with torch.no_grad():
+                output_ids = self.model._model.generate(
+                    input_ids,
+                    attention_mask=attention_masks,
+                    pad_token_id=pad_token_ids,
+                    images=image_tensor,
+                    image_sizes=gen_kwargs["image_sizes"],
+                    modalities=["image"] * len(batch),
+                    do_sample=False,
+                    max_new_tokens=gen_kwargs["max_new_tokens"],
+                    use_cache=True,
+                )
             text_outputs = self.model._tokenizer.batch_decode(output_ids, skip_special_tokens=True)
 
-            print(text_outputs)
+            responses = []
+            for idx, text in enumerate(text_outputs):
+                response = batch[idx].copy()
+                response.update({
+                    "prediction": text.strip(),
+                })
+                responses.append(response)
+            return responses

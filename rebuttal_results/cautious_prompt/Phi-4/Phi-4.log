@@ -1,0 +1,24 @@
+{
+    "Accuracy": {
+        "Relation_accuracy": 65.2364505844846,
+        "Attribute_accuracy": 74.14283946032924,
+        "Object_accuracy": 62.91528239202658,
+        "Overall_accuracy": 67.65362883798345,
+        "E_accuracy": 19.452796151533374
+    },
+    "Proportions": {
+        "A_proportion": 22.491349480968857,
+        "B_proportion": 24.86093469405633,
+        "C_proportion": 27.997021593447506,
+        "D_proportion": 20.656125443475975,
+        "E_proportion": 3.9945687880513336,
+        "NA_proportion": 0.0
+    },
+    "model_name_or_path": "Phi-4",
+    "evaluation_setting": "cautious_prompt",
+    "use_noise_image": false,
+    "nota_only": false,
+    "shuffle_nota_position": false,
+    "use_cautious_prompt": true,
+    "use_forced_grounding_prompt": false
+}

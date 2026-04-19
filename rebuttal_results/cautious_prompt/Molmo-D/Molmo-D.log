@@ -1,0 +1,24 @@
+{
+    "Accuracy": {
+        "Relation_accuracy": 36.71625929861849,
+        "Attribute_accuracy": 40.85901720509964,
+        "Object_accuracy": 30.163344407530452,
+        "Overall_accuracy": 36.10879943935877,
+        "E_accuracy": 0.12026458208057728
+    },
+    "Proportions": {
+        "A_proportion": 10.380622837370241,
+        "B_proportion": 12.807148175725985,
+        "C_proportion": 14.186851211072666,
+        "D_proportion": 14.506591914502213,
+        "E_proportion": 22.89869037711883,
+        "NA_proportion": 25.220095484210063
+    },
+    "model_name_or_path": "Molmo-D",
+    "evaluation_setting": "cautious_prompt",
+    "use_noise_image": false,
+    "nota_only": false,
+    "shuffle_nota_position": false,
+    "use_cautious_prompt": true,
+    "use_forced_grounding_prompt": false
+}

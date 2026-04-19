@@ -1,9 +1,9 @@
 import os
 import sys
+from pathlib import Path
+env_name = Path(sys.prefix).name
 
-env_name = os.path.basename(sys.prefix)
-
-if env_name == 'qwenvl25':
+if env_name == "env_2":
     from HumbleBench.models.base import register_model, MultiModalModelInterface
     from transformers import AutoProcessor, AutoModelForVision2Seq
     from transformers.image_utils import load_image

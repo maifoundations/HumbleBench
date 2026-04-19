@@ -1,7 +1,10 @@
 from packaging import version
 import transformers
 
-if version.parse(transformers.__version__) >= version.parse("4.51"):
+import sys
+from pathlib import Path
+env_name = Path(sys.prefix).name
+if env_name == "env_1":
     from HumbleBench.models.base import register_model, MultiModalModelInterface
     from transformers import LlavaNextProcessor, LlavaNextForConditionalGeneration
     import torch

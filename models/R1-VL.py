@@ -1,11 +1,11 @@
 import os
 import sys
+from pathlib import Path
+env_name = Path(sys.prefix).name
 
-env_name = os.path.basename(sys.prefix)
-
-if env_name == 'qwenvl25':
+if env_name == "env_2":
     from HumbleBench.models.base import register_model, MultiModalModelInterface
-    from transformers import Qwen2VLForConditionalGeneration, AutoTokenizer, AutoProcessor
+    from transformers import Qwen2VLForConditionalGeneration, AutoProcessor
     from qwen_vl_utils import process_vision_info
     import torch
     from typing import List, Dict

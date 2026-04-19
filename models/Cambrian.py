@@ -1,9 +1,9 @@
 import os
 import sys
+from pathlib import Path
+env_name = Path(sys.prefix).name
 
-env_name = os.path.basename(sys.prefix)
-
-if env_name == 'XCD':
+if env_name == "env_4":
     from PIL import Image
     from typing import List, Dict
     from torch.nn.utils.rnn import pad_sequence

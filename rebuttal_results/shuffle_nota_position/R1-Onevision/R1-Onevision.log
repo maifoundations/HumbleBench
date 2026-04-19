@@ -1,0 +1,24 @@
+{
+    "Accuracy": {
+        "Relation_accuracy": 64.82465462274176,
+        "Attribute_accuracy": 72.9421958163139,
+        "Object_accuracy": 61.35105204872646,
+        "Overall_accuracy": 66.59804651570234,
+        "E_accuracy": 62.10732984293193
+    },
+    "Proportions": {
+        "A_proportion": 18.54934080854978,
+        "B_proportion": 19.666243265735183,
+        "C_proportion": 20.38456484604266,
+        "D_proportion": 20.056064123341073,
+        "E_proportion": 20.362664797862557,
+        "NA_proportion": 0.9811221584687486
+    },
+    "model_name_or_path": "R1-Onevision",
+    "evaluation_setting": "shuffle_nota_position",
+    "use_noise_image": false,
+    "nota_only": false,
+    "shuffle_nota_position": true,
+    "use_cautious_prompt": false,
+    "use_forced_grounding_prompt": false
+}

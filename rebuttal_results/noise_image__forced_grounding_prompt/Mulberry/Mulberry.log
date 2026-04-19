@@ -1,0 +1,24 @@
+{
+    "Accuracy": {
+        "Relation_accuracy": 21.426673751328373,
+        "Attribute_accuracy": 26.104715930189382,
+        "Object_accuracy": 22.162236987818385,
+        "Overall_accuracy": 23.314791292540843,
+        "E_accuracy": 63.31930246542393
+    },
+    "Proportions": {
+        "A_proportion": 7.3759362270597,
+        "B_proportion": 7.441636371600017,
+        "C_proportion": 7.8007971617537555,
+        "D_proportion": 7.81831720029784,
+        "E_proportion": 66.16004555210021,
+        "NA_proportion": 3.4032674871884714
+    },
+    "model_name_or_path": "Mulberry",
+    "evaluation_setting": "noise_image__forced_grounding_prompt",
+    "use_noise_image": true,
+    "nota_only": false,
+    "shuffle_nota_position": false,
+    "use_cautious_prompt": false,
+    "use_forced_grounding_prompt": true
+}

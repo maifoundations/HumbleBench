@@ -1,0 +1,24 @@
+{
+    "Accuracy": {
+        "Relation_accuracy": 22.635494155154092,
+        "Attribute_accuracy": 25.213516524322316,
+        "Object_accuracy": 21.705426356589147,
+        "Overall_accuracy": 23.253471157636547,
+        "E_accuracy": 75.43595911004209
+    },
+    "Proportions": {
+        "A_proportion": 5.87797293154045,
+        "B_proportion": 10.498883097542814,
+        "C_proportion": 9.106040033288073,
+        "D_proportion": 5.453111996846393,
+        "E_proportion": 66.53672638079804,
+        "NA_proportion": 2.527265559984232
+    },
+    "model_name_or_path": "Gemma-3",
+    "evaluation_setting": "noise_image__forced_grounding_prompt",
+    "use_noise_image": true,
+    "nota_only": false,
+    "shuffle_nota_position": false,
+    "use_cautious_prompt": false,
+    "use_forced_grounding_prompt": true
+}

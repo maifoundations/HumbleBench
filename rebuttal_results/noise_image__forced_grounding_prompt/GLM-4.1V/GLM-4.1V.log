@@ -1,0 +1,24 @@
+{
+    "Accuracy": {
+        "Relation_accuracy": 8.727417640807651,
+        "Attribute_accuracy": 17.192721871518753,
+        "Object_accuracy": 20.29346622369878,
+        "Overall_accuracy": 15.382593841706452,
+        "E_accuracy": 0.0
+    },
+    "Proportions": {
+        "A_proportion": 1.1300424860934692,
+        "B_proportion": 1.6819237002321403,
+        "C_proportion": 1.2702027944461478,
+        "D_proportion": 1.6030835267837589,
+        "E_proportion": 93.75410625903376,
+        "NA_proportion": 0.5606412334107135
+    },
+    "model_name_or_path": "GLM-4.1V",
+    "evaluation_setting": "noise_image__forced_grounding_prompt",
+    "use_noise_image": true,
+    "nota_only": false,
+    "shuffle_nota_position": false,
+    "use_cautious_prompt": false,
+    "use_forced_grounding_prompt": true
+}

@@ -1,9 +1,9 @@
 import os
 import sys
+from pathlib import Path
+env_name = Path(sys.prefix).name
 
-env_name = os.path.basename(sys.prefix)
-
-if env_name == 'qwenvl25':
+if env_name == "env_1":
     from HumbleBench.models.base import register_model, MultiModalModelInterface
     from qwen_vl_utils import process_vision_info
     from vllm import LLM, SamplingParams

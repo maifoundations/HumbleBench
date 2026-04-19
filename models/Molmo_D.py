@@ -1,9 +1,8 @@
 import os
 import sys
-
-env_name = os.path.basename(sys.prefix)
-
-if env_name == "molmo":
+from pathlib import Path
+env_name = Path(sys.prefix).name
+if env_name == "env_2":
     from HumbleBench.models.base import register_model, MultiModalModelInterface
     from transformers import AutoModelForCausalLM, AutoProcessor, GenerationConfig
     import torch
