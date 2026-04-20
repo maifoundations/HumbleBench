@@ -1,0 +1,24 @@
+{
+    "Accuracy": {
+        "Relation_accuracy": 7.917109458023379,
+        "Attribute_accuracy": 13.999257333828444,
+        "Object_accuracy": 15.97452934662237,
+        "Overall_accuracy": 12.618807761377074,
+        "E_accuracy": 0.0
+    },
+    "Proportions": {
+        "A_proportion": 0.6876615128553283,
+        "B_proportion": 1.3271429197144236,
+        "C_proportion": 0.9986421970128334,
+        "D_proportion": 1.0687223511891726,
+        "E_proportion": 78.08243178134991,
+        "NA_proportion": 17.835399237878324
+    },
+    "model_name_or_path": "Ovis-2",
+    "evaluation_setting": "noise_image__forced_grounding_prompt",
+    "use_noise_image": true,
+    "nota_only": false,
+    "shuffle_nota_position": false,
+    "use_cautious_prompt": false,
+    "use_forced_grounding_prompt": true
+}

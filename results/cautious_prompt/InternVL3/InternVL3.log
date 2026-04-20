@@ -1,0 +1,24 @@
+{
+    "Accuracy": {
+        "Relation_accuracy": 67.7470775770457,
+        "Attribute_accuracy": 75.9747493501671,
+        "Object_accuracy": 66.00221483942414,
+        "Overall_accuracy": 70.10643423415532,
+        "E_accuracy": 23.75225496091401
+    },
+    "Proportions": {
+        "A_proportion": 21.264946782882923,
+        "B_proportion": 23.095790810739782,
+        "C_proportion": 27.721080986378173,
+        "D_proportion": 22.49572949060488,
+        "E_proportion": 5.418071919758224,
+        "NA_proportion": 0.004380009636021199
+    },
+    "model_name_or_path": "InternVL3",
+    "evaluation_setting": "cautious_prompt",
+    "use_noise_image": false,
+    "nota_only": false,
+    "shuffle_nota_position": false,
+    "use_cautious_prompt": true,
+    "use_forced_grounding_prompt": false
+}

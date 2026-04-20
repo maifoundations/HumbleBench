@@ -1,0 +1,24 @@
+{
+    "Accuracy": {
+        "Relation_accuracy": 40.20988310308183,
+        "Attribute_accuracy": 36.62582002723109,
+        "Object_accuracy": 37.47231450719823,
+        "Overall_accuracy": 38.075423765932285,
+        "E_accuracy": 23.932651834034875
+    },
+    "Proportions": {
+        "A_proportion": 28.70658315448294,
+        "B_proportion": 17.936139459506812,
+        "C_proportion": 22.543909596601114,
+        "D_proportion": 12.12386667250668,
+        "E_proportion": 18.689501116902456,
+        "NA_proportion": 0.0
+    },
+    "model_name_or_path": "LLaMA-3",
+    "evaluation_setting": "noise_image__forced_grounding_prompt",
+    "use_noise_image": true,
+    "nota_only": false,
+    "shuffle_nota_position": false,
+    "use_cautious_prompt": false,
+    "use_forced_grounding_prompt": true
+}

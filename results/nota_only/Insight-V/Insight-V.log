@@ -1,0 +1,24 @@
+{
+    "Accuracy": {
+        "Relation_accuracy": 1.0892667375132838,
+        "Attribute_accuracy": 2.1784874365639313,
+        "Object_accuracy": 2.58859357696567,
+        "Overall_accuracy": 1.9491042880294338,
+        "E_accuracy": 0.0
+    },
+    "Proportions": {
+        "A_proportion": 52.77473610441943,
+        "B_proportion": 3.0922868030309667,
+        "C_proportion": 1.9403442687573915,
+        "D_proportion": 1.493583285883229,
+        "E_proportion": 1.9491042880294338,
+        "NA_proportion": 38.749945249879545
+    },
+    "model_name_or_path": "Insight-V",
+    "evaluation_setting": "nota_only",
+    "use_noise_image": false,
+    "nota_only": true,
+    "shuffle_nota_position": false,
+    "use_cautious_prompt": false,
+    "use_forced_grounding_prompt": false
+}

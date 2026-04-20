@@ -1,0 +1,24 @@
+{
+    "Accuracy": {
+        "Relation_accuracy": 58.249202975557914,
+        "Attribute_accuracy": 72.01386310186905,
+        "Object_accuracy": 59.95293466223699,
+        "Overall_accuracy": 63.659060049932116,
+        "E_accuracy": 0.0
+    },
+    "Proportions": {
+        "A_proportion": 27.2524199553239,
+        "B_proportion": 19.000481801059962,
+        "C_proportion": 24.747054443519776,
+        "D_proportion": 18.733301213262667,
+        "E_proportion": 10.266742586833692,
+        "NA_proportion": 0.0
+    },
+    "model_name_or_path": "LLaVA-Next",
+    "evaluation_setting": "cautious_prompt",
+    "use_noise_image": false,
+    "nota_only": false,
+    "shuffle_nota_position": false,
+    "use_cautious_prompt": true,
+    "use_forced_grounding_prompt": false
+}

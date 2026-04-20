@@ -50,9 +50,6 @@ logs/
 # Pypi distribution token
 .pipyrc
 
-# TODO markdown files
-TODO.md
-
 # cache file
 .cache
 

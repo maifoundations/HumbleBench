@@ -1,0 +1,24 @@
+{
+    "Accuracy": {
+        "Relation_accuracy": 35.33475026567481,
+        "Attribute_accuracy": 31.22911251392499,
+        "Object_accuracy": 39.119601328903656,
+        "Overall_accuracy": 35.07949717489379,
+        "E_accuracy": 10.132291040288635
+    },
+    "Proportions": {
+        "A_proportion": 52.71779597915115,
+        "B_proportion": 20.98900617581359,
+        "C_proportion": 13.332749332048529,
+        "D_proportion": 7.253295957251106,
+        "E_proportion": 5.69839253646358,
+        "NA_proportion": 0.008760019272042398
+    },
+    "model_name_or_path": "DeepSeek-VL2",
+    "evaluation_setting": "noise_image__forced_grounding_prompt",
+    "use_noise_image": true,
+    "nota_only": false,
+    "shuffle_nota_position": false,
+    "use_cautious_prompt": false,
+    "use_forced_grounding_prompt": true
+}
